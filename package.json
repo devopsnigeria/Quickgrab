@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/devopsnigeria/Quickgrab/issues"
   },
-  "homepage": "https://github.com/devopsnigeria/Quickgrab#readme"
+  "homepage": "https://github.com/devopsnigeria/Quickgrab#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
 }
