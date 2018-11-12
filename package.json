@@ -1,0 +1,30 @@
+{
+  "name": "quickgrab",
+  "version": "1.0.0",
+  "description": "This repository hold the source code for quickgrab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devopsnigeria/Quickgrab.git"
+  },
+  "keywords": [
+    "Connect",
+    "Travellers",
+    "Shoppers",
+    "Online",
+    "Stores",
+    "Offline",
+    "Stores",
+    "Earn",
+    "Travel"
+  ],
+  "author": "Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devopsnigeria/Quickgrab/issues"
+  },
+  "homepage": "https://github.com/devopsnigeria/Quickgrab#readme"
+}
