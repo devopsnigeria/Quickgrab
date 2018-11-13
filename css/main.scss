@@ -1,17 +1,13 @@
 $body-color: #373a3c;
 
-$theme-colors: (
-  "primary": #a8a8a8
-);
-
-$container-max-widths: (
-    xl: 1500px
-);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../scss/fontawesome.scss";
+@import "../scss/regular.scss";
+@import "../scss/brands.scss";
+@import "../scss/solid.scss";
 
-header .logo img{
+body, html {
+    height: 100%;
     width: 100%;
-    max-width: 240px;
-    vertical-align: middle;
 }
