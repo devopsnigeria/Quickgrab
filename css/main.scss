@@ -1,1 +1,17 @@
+$body-color: #373a3c;
+
+$theme-colors: (
+  "primary": #a8a8a8
+);
+
+$container-max-widths: (
+    xl: 1500px
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+header .logo img{
+    width: 100%;
+    max-width: 240px;
+    vertical-align: middle;
+}
