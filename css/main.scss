@@ -1,9 +1,8 @@
-@font-face {
-    font-family: 'draft';
-    src: url("./fonts/Draft B Regular.otf");
-}
-
 $body-color: #373a3c;
+
+$container-max-widths: (
+  xl: 1250px
+);
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -12,46 +11,26 @@ $body-color: #373a3c;
 @import "../scss/brands.scss";
 @import "../scss/solid.scss";
 
+
 body, html {
     height: 100%;
     width: 100%;
 }
 
-section {
-
-    .section {
-        margin-bottom: 3%;
+.section {
+        color: #fff;
+        font-size: 18px;
+        background: -webkit-linear-gradient(-45deg,#6e1a52,#ec5252);
 
         h1 {
-            font-size: 16px;
-            font-family: 'Open Sans';
-            margin-top: 8px;
+            font-family: 'Trebuchet MS';
+            margin-top: 1.5rem;
+            margin-bottom: 0.2rem;
         }
 
         p {
-            font-size: 15px;
-            font-family: "Rubik";
-            margin-bottom: 6px;
+            font-size: 10px;
+            font-family: "Open Sans";
+            color: antiquewhite;
         }
-    }
-}
-
-footer {
-
-    img {
-        width: 100%;
-        max-width: 240px;
-    }
-
-    li {
-        list-style: none;
-        font-size: 16px;
-        line-height: 2.7rem;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-weight: 400;
-
-        a {
-            color: #333;
-        }
-    }
 }

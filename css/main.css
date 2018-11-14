@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'draft';
-  src: url("./fonts/Draft B Regular.otf"); }
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -454,18 +451,9 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1250px; } }
 
 .container-fluid {
   width: 100%;
@@ -10730,27 +10718,17 @@ body, html {
   height: 100%;
   width: 100%; }
 
-section .section {
-  margin-bottom: 3%; }
-  section .section h1 {
-    font-size: 16px;
-    font-family: 'Open Sans';
-    margin-top: 8px; }
-  section .section p {
-    font-size: 15px;
-    font-family: "Rubik";
-    margin-bottom: 6px; }
-
-footer img {
-  width: 100%;
-  max-width: 240px; }
-footer li {
-  list-style: none;
-  font-size: 16px;
-  line-height: 2.7rem;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-weight: 400; }
-  footer li a {
-    color: #333; }
+.section {
+  color: #fff;
+  font-size: 18px;
+  background: -webkit-linear-gradient(-45deg, #6e1a52, #ec5252); }
+  .section h1 {
+    font-family: 'Trebuchet MS';
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem; }
+  .section p {
+    font-size: 10px;
+    font-family: "Open Sans";
+    color: antiquewhite; }
 
 /*# sourceMappingURL=main.css.map */

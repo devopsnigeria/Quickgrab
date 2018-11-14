@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "Asap-Regular";
+    src: url("./fonts/Asap-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Asap-Medium";
+    src: url("./fonts/Asap-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Asap-SemiBold";
+    src: url("./fonts/Asap-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Asap-Bold";
+    src: url("./fonts/Asap-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Cabin-Regular";
+    src: url("./fonts/Cabin-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Cabin-Medium";
+    src: url("./fonts/Cabin-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Cabin-SemiBold";
+    src: url("./fonts/Cabin-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Cabin-Bold";
+    src: url("./fonts/Cabin-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Catamaran-Regular";
+    src: url("./fonts/Catamaran-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Catamaran-Medium";
+    src: url("./fonts/Catamaran-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Catamaran-SemiBold";
+    src: url("./fonts/Catamaran-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Catamaran-Bold";
+    src: url("./fonts/Catamaran-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Dosis-Regular";
+    src: url("./fonts/Dosis-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Dosis-Medium";
+    src: url("./fonts/Dosis-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Dosis-SemiBold";
+    src: url("./fonts/Dosis-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Dosis-Bold";
+    src: url("./fonts/Dosis-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Exo-Regular";
+    src: url("./fonts/Exo-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Exo-Medium";
+    src: url("./fonts/Exo-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Exo-SemiBold";
+    src: url("./fonts/Exo-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Exo-Bold";
+    src: url("./fonts/Exo-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'draft';
+    src: url("./fonts/Draft B Regular.otf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kanit-Regular";
+    src: url("./fonts/Kanit-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Kanit-Medium";
+    src: url("./fonts/Kanit-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Kanit-SemiBold";
+    src: url("./fonts/Kanit-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Kanit-Bold";
+    src: url("./fonts/Kanit-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("./fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url("./fonts/MavenPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "MavenPro-Medium";
+    src: url("./fonts/MavenPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "MavenPro-Bold";
+    src: url("./fonts/MavenPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+font-face {
+    font-family: "Mukta-Regular";
+    src: url("./fonts/Mukta-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Mukta-Medium";
+    src: url("./fonts/Mukta-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Mukta-SemiBold";
+    src: url("./fonts/Mukta-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Mukta-Bold";
+    src: url("./fonts/Mukta-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
