@@ -157,7 +157,7 @@
     font-weight: 700;
 }
 
-font-face {
+@font-face {
     font-family: "Mukta-Regular";
     src: url("./fonts/Mukta-Regular.ttf") format("truetype");
     font-weight: 400;
@@ -178,9 +178,82 @@ font-face {
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("./fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("./fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("./fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url("./fonts/Rubik-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url("./fonts/Rubik-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Rubik-Bold";
+    src: url("./fonts/Rubik-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("./fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("./fonts/Ubuntu-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("./fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 $body-color: #373a3c;
 
-
+$container-max-widths: (
+  md: 820px,
+  lg: 1000px,
+  xl: 1200px
+);
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -215,6 +288,11 @@ header {
             margin-top: 4rem;
             margin-bottom: 0;
         }
+
+        .nav-link {
+            padding: 0.5rem 0.5rem;
+            color: antiquewhite;
+        }
     }
 
     .navigation {
@@ -226,17 +304,21 @@ header {
             .navbar-toggler {
                 cursor: pointer;
                 outline: 0;
-                background: #fff
             }
 
-            .nav-link {
-                font-size: 14px;
-                color: #fff;
-                font-family: "Open Sans";
+            .navbar-toggler-icon {
+                width: 2rem;
+                height: 2rem;
             }
 
             .nav-item {
-                padding: 0.2rem 1rem;
+                padding: 0.4rem 1rem;
+            }
+
+            .nav-link {
+                font-size: 15px;
+                color: #fff;
+                font-family: "Ubuntu-Regular";
             }
         }
     }
@@ -250,7 +332,7 @@ header {
     position: relative;
     width: 100%;
     color: #fff;
-    padding: 3rem 0;
+    padding: 4.2rem 0;
 
     h1 {
         font-size: 54px;
@@ -263,9 +345,5 @@ header {
         font-family: "Open Sans";
         font-weight: 300;
     }
-
-    @media (max-width: 544px) {  
-        h2.lead {font-size: 16px;}
-      }
     
 }
