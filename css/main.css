@@ -10945,7 +10945,7 @@ header .navigation {
     color: #fff;
     font-family: "Ubuntu-Regular"; }
 
-.row-wrapper {
+.hero {
   background-color: #0D3250;
   margin-top: 0px;
   background-image: none;
@@ -10954,11 +10954,11 @@ header .navigation {
   width: 100%;
   color: #fff;
   padding: 4.2rem 0; }
-  .row-wrapper h1 {
+  .hero h1 {
     font-size: 54px;
     font-weight: 700;
     font-family: "Kanit-Bold"; }
-  .row-wrapper h2.lead {
+  .hero h2.lead {
     font-size: 20px;
     font-family: "Open Sans";
     font-weight: 300; }
