@@ -290,7 +290,7 @@ header {
         }
 
         .nav-link {
-            padding: 0.5rem 0.5rem;
+            padding: 0;
             color: antiquewhite;
         }
     }
@@ -332,7 +332,7 @@ header {
     position: relative;
     width: 100%;
     color: #fff;
-    padding: 4.2rem 0;
+    padding-top: 4.2rem;
 
     h1 {
         font-size: 54px;
@@ -344,7 +344,14 @@ header {
         font-size: 20px;
         font-family: "Open Sans";
         font-weight: 300;
-    }   
+    }
+
+    .banner {
+        background: url(../images/hero_art_screens.png)no-repeat 0 0;
+        background-position: center;
+        height: 450px;
+
+    }
 }
 
 .overview {
@@ -353,5 +360,15 @@ header {
 
     h1 {
         margin-top: 1.5rem;
+    }
+}
+
+.sec1 {
+
+    h2 {
+        font-size: 40px;
+        color: #3A679D;
+        margin-bottom: 10px;
+        text-align: left;
     }
 }
