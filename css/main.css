@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Asap-Regular";
+  font-family: "Asap";
   src: url("./fonts/Asap-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -16,7 +16,7 @@
   src: url("./fonts/Asap-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Cabin-Regular";
+  font-family: "Cabin";
   src: url("./fonts/Cabin-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -32,7 +32,7 @@
   src: url("./fonts/Cabin-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Catamaran-Regular";
+  font-family: "Catamaran";
   src: url("./fonts/Catamaran-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -48,7 +48,7 @@
   src: url("./fonts/Catamaran-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Dosis-Regular";
+  font-family: "Dosis";
   src: url("./fonts/Dosis-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -64,27 +64,11 @@
   src: url("./fonts/Dosis-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Exo-Regular";
-  src: url("./fonts/Exo-Regular.ttf") format("truetype");
-  font-weight: 400; }
-@font-face {
-  font-family: "Exo-Medium";
-  src: url("./fonts/Exo-Medium.ttf") format("truetype");
-  font-weight: 500; }
-@font-face {
-  font-family: "Exo-SemiBold";
-  src: url("./fonts/Exo-SemiBold.ttf") format("truetype");
-  font-weight: 600; }
-@font-face {
-  font-family: "Exo-Bold";
-  src: url("./fonts/Exo-Bold.ttf") format("truetype");
-  font-weight: 700; }
-@font-face {
   font-family: 'draft';
   src: url("./fonts/Draft B Regular.otf") format("truetype");
   font-weight: 400; }
 @font-face {
-  font-family: "Kanit-Regular";
+  font-family: "Kanit";
   src: url("./fonts/Kanit-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -100,7 +84,7 @@
   src: url("./fonts/Kanit-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Lato-Regular";
+  font-family: "Lato";
   src: url("./fonts/Lato-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -108,7 +92,7 @@
   src: url("./fonts/Lato-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "MavenPro-Regular";
+  font-family: "MavenPro";
   src: url("./fonts/MavenPro-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -120,7 +104,7 @@
   src: url("./fonts/MavenPro-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Mukta-Regular";
+  font-family: "Mukta";
   src: url("./fonts/Mukta-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -136,7 +120,7 @@
   src: url("./fonts/Mukta-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -152,7 +136,7 @@
   src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   src: url("./fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -164,7 +148,7 @@
   src: url("./fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Rubik-Regular";
+  font-family: "Rubik";
   src: url("./fonts/Rubik-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -176,7 +160,7 @@
   src: url("./fonts/Rubik-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
-  font-family: "Ubuntu-Regular";
+  font-family: "Ubuntu";
   src: url("./fonts/Ubuntu-Regular.ttf") format("truetype");
   font-weight: 400; }
 @font-face {
@@ -526,12 +510,12 @@ h6, .h6 {
   line-height: 1.2; }
 
 .display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
+  font-size: 2.7rem;
+  font-weight: 500;
   line-height: 1.2; }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.2; }
 
@@ -10939,11 +10923,10 @@ header .navigation {
   header .navigation .navbar .nav-link {
     font-size: 15px;
     color: antiquewhite;
-    font-family: "Ubuntu-Regular";
+    font-family: "Ubuntu";
     text-transform: uppercase; }
-  @media (max-width: 576px) {
-    header .navigation .nav-link {
-      text-align: center; } }
+  header .navigation .nav-link {
+    text-align: center; }
 
 .hero {
   background-color: #0D3250;
@@ -10973,10 +10956,19 @@ header .navigation {
   .overview h1 {
     font-size: 18px; }
 
-.sec1 h2 {
-  font-size: 40px;
-  color: #3A679D;
-  margin-bottom: 10px;
-  text-align: left; }
+.wrap h1 {
+  font-family: "Asap-Medium";
+  color: #245C89; }
+
+footer {
+  background: #0D3250;
+  color: antiquewhite;
+  font-family: 'Trebuchet MS'; }
+  footer h5 {
+    text-transform: uppercase; }
+  footer .nav-link {
+    font-size: 15px;
+    color: antiquewhite;
+    font-family: "Ubuntu"; }
 
 /*# sourceMappingURL=main.css.map */
