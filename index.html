@@ -87,26 +87,26 @@
         </div>
     </header>
 
-    <div class="modal fade" id="couponModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header text-center">
-              <h5 class="modal-title w-100" style="font-size: 20px; font-family: 'Rubik-Regular'; ">Get Quickgrab $10 Coupon</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="md-form mb-5">
-                    <i class="fa fa-user prefix grey-text"></i>
-                    <input type="email" id="email" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="email">Registerd Email</label>
+    <div class="modal fade text-center py-5"  id="couponModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="top-strip"></div>
+                    <a class="h2" href="https://www.fiverr.com/sunlimetech/design-and-fix-your-bootstrap-4-issues" target="_blank">QuickGrab</a>
+                    <h3 class="pt-5 mb-0 text-secondary">$10 Coupon Code</h3>
+                    <p class="pb-1 text-muted"><small>Get Our Coupon Code Using Your Registered Email.</small></p>
+                    <form>
+                        <div class="input-group mb-3 w-75 mx-auto">
+                          <input type="email" class="form-control" placeholder="quickgrab@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                          <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-paper-plane"></i></button>
+                          </div>
+                        </div>
+                    </form>
+                    <p class="pb-1 text-muted"><small>Your email is safe with us. We won't spam.</small></p>
+                    <div class="bottom-strip"></div>
                 </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary">Get Coupon</button>
-            </div>
-          </div>
         </div>
     </div>
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -183,75 +183,124 @@
     </div>
 
     <div class="hero hero-wrapper pt-5">
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                    <h1 class="p-3 m-0">Connects Shopper & Travellers</h1>
-                    <h2 class="lead">Quickgrab for EASY and AFFORDABLE transactions</h2>
+                <div class="col-md-7 mx-auto my-3">
+                    <h1>Go Big, Start Small</h1>
+                    <h2>QuickGrab helps shoppers and travelers explore the world of stores</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md 4 text-center"></div>
-                <div class="col-md 4 text-center">
-                    <button type="button" class="btn btn-block">Get Started</button>
+                <div class="col-md-5 mx-auto">
+                    <form>
+                        <div class="input-group mb-3 mx-auto">
+                          <input type="url" class="form-control" placeholder="Paste the URL of the product you want to get" aria-label="Product link" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-paper-plane fa-2x"></i></button>
+                          </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md 4 text-center"></div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <picture>
-                        <img src = "./images/hero_art_screens.png" class = "img-fluid" alt = "Responsive Image" width = "80%" height = "400">
-                    </picture>
-                </div>
+                
             </div>
         </div>
     </div>
     
-    <div class="overview d-md-none d-lg-block d-sm-none d-none">
-        <div class="container" style="height: 100px;">
-            <div class="row h-100">
-                <div class="col-md-4">
-                    <div class="media h-100">
-                        <i class="fab fa-opencart fa-5x mr-3 mt-3 align-self-start" style="color: #fff"></i>
-                        <div class="media-body align-self-center">
-                            <h1 class="mt-0">Verified Buyers & Travellers</h1>Verified Users & Products
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="media h-100">
-                        <i class="fab fa-paypal fa-5x mr-3 mt-3 align-self-start" style="color: #fff"></i>
-                        <div class="media-body align-self-center">
-                            <h1 class="mt-0">Secured Payment Options</h1>We accept Visa, Master & Debit Card
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="media h-100">
-                        <i class="fab fa-accessible-icon fa-5x mr-3 mt-3 align-self-start" style="color: #fff"></i>
-                        <div class="media-body align-self-center">
-                            <h1 class="mt-0">Guaranteed Delivery</h1>Secure Location Delivery Anywhere
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="py-5">
-        <div class="wrap">
+    <section>
+        <div class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-7 cto pb-5 mb-xs-5">
-                        <div class="mt-5"></div>
-                        <h1 class=" display-3 pt-5">Join our Global Community to Shop <br> Anywhere & Travel Everywhere</h1>
-                        <div style="height:5px;width:110px;background:#ff6600;opacity:0.5;"></div>
-                        <p class="display-4 my-4">Even from the convenience of your home, office<br>or anywhere shop with QuickGrab</p>
-                        <button class="btn btn-primary btn-lg">Order with QuickGrab</button>
-                    </div>
-                    <div class="col-md-5 col-xs-12">
-                        <img class="" src="./images/office.svg" width="468">
-                    </div>
+                <h4 class="display-2 text-center pt-5 mb-5">How QuickGrab Work</h4>
+                    <div class="row">
+                	    <div class="col-md-12 ">
+                            <nav>
+                                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-shop" role="tab" aria-controls="nav-home" aria-selected="true">For Shoppers</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-travel" role="tab" aria-controls="nav-profile" aria-selected="false">For Travellers</a>
+                            </nav>
+                            <div class="tab-content py-5" id="nav-tabContent">
+                                <div class="tab-pane fade show active main-timeline4" id="nav-shop" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="timeline">
+                                        <span class="timeline-content">
+                                            <span class="year">003</span>
+                                            <div class="inner-content py-4">
+                                                <h3 class="title display-3 mb-2">Traveller Reward</h3>
+                                                <p class="description display-4 mb-0">QuickGrab auto-calculates all applicable fees, including the monetary reward you agree to pay your traveler for delivering your item.</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="timeline">
+                                        <span class="timeline-content">
+                                            <span class="year">001</span>
+                                            <div class="inner-content py-4">
+                                                <h3 class="title display-3 mb-2">Product Information</h3>
+                                                <p class="description display-4 mb-0">With QuickGrab, you can get any item from around the world. Get started by creating an order with required details of product</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="timeline">
+                                        <span class="timeline-content">
+                                            <span class="year">004</span>
+                                            <div class="inner-content py-4">
+                                                <h3 class="title display-3 mb-2">Item Delivery</h3>
+                                                <p class="description display-4 mb-0">Coordinate a time and public place to meet your traveler for your item. Ensure to confirm delivery so that your traveler gets paid.</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="timeline">
+                                        <span class="timeline-content">
+                                            <span class="year">002</span>
+                                            <div class="inner-content py-4">
+                                                <h3 class="title display-3 mb-2">Delivery Offer</h3>
+                                                <p class="description display-4 mb-0">We would publish your orders once its created & travelers heading to your city will bid to deliver it by making an offer.</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-travel" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="main-timeline4">
+                                        <div class="timeline">
+                                            <span class="timeline-content">
+                                                <span class="year">003</span>
+                                                <div class="inner-content py-4">
+                                                    <h3 class="title display-3 mb-2">Purchase Item</h3>
+                                                    <p class="description display-4 mb-0">This way, you know exactly what you are bringing. Upon delivery, you will be reimbursed for the price of the item and paid your reward.</p>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="timeline">
+                                            <span class="timeline-content">
+                                                <span class="year">001</span>
+                                                <div class="inner-content py-4">
+                                                    <h3 class="title display-3 mb-2">Find Order, Make Offer</h3>
+                                                    <p class="description display-4 mb-0"> Search for orders based on your travel destination. Make an offer and set your travel reward—the amount of money your shopper will pay you for delivering their item.</p>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="timeline">
+                                            <span class="timeline-content">
+                                                <span class="year">004</span>
+                                                <div class="inner-content py-4">
+                                                    <h3 class="title display-3 mb-2">Deliver Order</h3>
+                                                    <p class="description display-4 mb-0">Coordinate a time and public place to meet your traveler for your item. Ensure to confirm delivery so that your traveler gets paid.</p>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="timeline">
+                                            <span class="timeline-content">
+                                                <span class="year">002</span>
+                                                <div class="inner-content py-4">
+                                                    <h3 class="title display-3 mb-2">Order Confirmation</h3>
+                                                    <p class="description display-4 mb-0">Upon confirmation of order being received by shopper, we’ll transfer payment to your account on file. </p>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
                 </div>
             </div>
         </div>
@@ -261,7 +310,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="https://quickgrab.io"><img src="./images/flaticon-logo-footer.svg" width="200" class="mt-5"></a>
+                    <a href="https://quickgrab.io"><img src="./images/flaticon-logo-footer.svg" width="150" class="mt-5"></a>
                     <ul class="nav justify-content-center">
                         <li class="nav-item"><a class="nav-link" href="">Terms & condition</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Privacy policy</a></li>
@@ -279,7 +328,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-xs-12 pt-4">
-                    <h5>Information</h2>
+                    <h5>Information</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="">How Quickgrab works</a></li>
@@ -289,7 +338,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 col-xs-12 pt-4">
-                    <h5>Community</h2>
+                    <h5>Community</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="">Quickgrab Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Shop & Travel Program</a></li>
@@ -297,7 +346,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 col-xs-12 pt-4">
-                    <h5>content</h2>
+                    <h5>content</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="">Offline Stores</a></li>
                         <li class="nav-item"><a class="nav-link" href="">Trust & Safety</a></li>
