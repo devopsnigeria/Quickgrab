@@ -11108,4 +11108,27 @@ section {
     font-size: 11px;
     border-radius: 4px; }
 
+.sp-tab {
+  background: #ebeff2; }
+
+.sp-tabs .nav-link {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 40px 0;
+  color: #506077;
+  border-radius: 0;
+  border: 0;
+  font-size: 11px; }
+
+.sp-tabs .nav-link.active {
+  background: #fff;
+  color: #17d3b9;
+  border-top: 2px solid #17d3b9;
+  border-color: #fff;
+  border-top-color: #17d3b9; }
+
+.tab-content {
+  padding: 120px 0; }
+
 /*# sourceMappingURL=main.css.map */

@@ -74,7 +74,7 @@
                     </button>
                     <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
                         <ul class = "navbar-nav ml-5">
-                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#couponModal">Quickgrab Coupon</a></li>
+                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#couponModal">GrabCard</a></li>
                             <li class = "nav-item"><a class = "nav-link text-center-sm" href = "marketplace.html">marketplace</a></li>
                             <li class = "nav-item"><a class = "nav-link" href = "earn.html">Earn Travelling</a></li>
                             <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#registerModal">Register</a></li>
@@ -92,7 +92,7 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="top-strip"></div>
-                    <h3 class="pt-4 mb-3 text-secondary">Earn a coupon code</h3>
+                    <h3 class="pt-4 mb-3 text-secondary">Get The GrabCard</h3>
                     <p class="pb-1 text-muted"><small>Get our <span style="text-transform: uppercase;">Coupon Code</span> using your registered email.</small></p>
                     <form>
                         <div class="input-group mb-3 w-75 mx-auto">
@@ -112,37 +112,55 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header text-center">
-              <h5 class="modal-title w-100 font-weight-bold">Registration</h5>
+              <h1 class="modal-title w-100 font-weight-bold">Registration</h1>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body mx-4 my-4 p-0">
-                <form>
-                    <div class="form-group row m-0 mb-4">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Firstname</label>
-                        <div class="col-sm-9 p-0">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            <div class="modal-body mx-5 my-5 p-0">
+                <form action="register.php" method="POST">
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="" name="" placeholder="First Name" required>
                         </div>
                     </div>
-                    <div class="form-group row m-0 mb-4">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Lastname</label>
-                        <div class="col-sm-9 p-0">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="far fa-user text-info"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="" name="" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-0 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-phone-square text-info"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="" name="" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-envelope text-info"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="" name="" placeholder="Email" required>
                         </div>
                     </div>
 
                     <div class="form-group row m-0 mb-4">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Email</label>
-                        <div class="col-sm-9 p-0">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                    </div>
-
-                    <div class="form-group row m-0">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
-                        <div class="col-sm-9 p-0">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-lock text-info"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="" name="" placeholder="Password" required>
                         </div>
                     </div>
                 </form>
@@ -219,9 +237,7 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-xs-12">
                                 <h2 class="font-italic mt-5">Save while you shop the world</h2>
-                                <p class="text-justify mb-4">Say no to custom and tax fee, say no to high shipping rate. With QuickGrab you get a seemless
-                                    shopping experience round the world, you save while you shop and get your items delivered by
-                                    our travellers
+                                <p class="text-justify mb-4">With QuickGrabr, you can get any item from around the world.s
                                 </p>
                                 <form>
                                     <div class="input-group">
@@ -262,24 +278,90 @@
         </div>
 
         <div class="wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item">
-                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                                    </li>
-                                  </ul>
+            <nav class="sp-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="nav nav-tabs nav-fill sp-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                                <span><i class="fab fa-app-store fa-2x"></i></span><br>
+                                <span>Secure Payments</span>
+                            </a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <span><i class="fab fa-lastfm fa-2x"></i></span><br>
+                                <span>Guaranteed Delivery</span></a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <span><i class="fab fa-apple-pay fa-2x"></i></span><br>
+                                <span>Multiple Pay Options</span></a></a>
+                            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">
+                                <span><i class="fab fa-sellsy fa-2x"></i></span><br>
+                                <span>No Hidden Fees</span></a></a>
+                            <a class="nav-item nav-link" id="nav-donate-tab" data-toggle="tab" href="#nav-donate" role="tab" aria-controls="nav-about" aria-selected="false">
+                                <span><i class="fab fa-asymmetrik fa-2x"></i></span><br>
+                                <span>Verified Users</span></a></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>       
+            </nav>
+            <div class="sp-tabs-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 mx-auto">
+                                    <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
+                                                        <p class="text-justify">Your customers can pay you from their mobile app anywhere in your store. You do not need to set up a complex integration, we’ll provide a POS. Your customers only have to scan or enter a code to pay.</p>
+                                                    </div>
+                                                    <div class="col-md-5"><img src="./images/icon-p-shop@2x.png"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
+                                                        <p class="text-justify">Your customers can pay you from their mobile app anywhere in your store. You do not need to set up a complex integration, we’ll provide a POS. Your customers only have to scan or enter a code to pay.</p>
+                                                    </div>
+                                                    <div class="col-md-5"><img src="./images/icon-p-website@2x.png"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
+                                                        <p class="text-justify">Your customers can pay you from their mobile app anywhere in your store. You do not need to set up a complex integration, we’ll provide a POS. Your customers only have to scan or enter a code to pay.</p>
+                                                    </div>
+                                                    <div class="col-md-6"><img src="./images/icon-p-mobile@2x.png"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
+                                                        <p class="text-justify">Your customers can pay you from their mobile app anywhere in your store. You do not need to set up a complex integration, we’ll provide a POS. Your customers only have to scan or enter a code to pay.</p>
+                                                    </div>
+                                                    <div class="col-md-6"><img src="./images/icon-p-delivery@2x.png"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-donate" role="tabpanel" aria-labelledby="nav-about-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
+                                                        <p class="text-justify">Your customers can pay you from their mobile app anywhere in your store. You do not need to set up a complex integration, we’ll provide a POS. Your customers only have to scan or enter a code to pay.</p>
+                                                    </div>
+                                                    <div class="col-md-6"><img src="./images/icon-p-donations@2x.png"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <footer>
