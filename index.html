@@ -39,54 +39,54 @@
     <script type="text/javascript" src="./node_modules/popper.js/dist/popper.min.js"></script>
 
 </head>
-<body>
-    <header class="clasic-nav blue-nav">
-        <div class="nav-wrapper d-md-none d-lg-block d-sm-none d-none ">
-            <div class="container clasic-nav-container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="https://www.quickgrab.io"><img src="./images/logo.png" alt="QuickGrab" class="nav-brand mt-3"></a>
-                    </div>
-                    <div class="col-md-5">
-                        <h2 class="text-right mt-5 pt-4">24/7/365 Support</h2>
-                        <ul class = "nav justify-content-end">
-                            <li class = "nav-item"><a class = "nav-link p-0" href = "partnership.html">Partnership |</a></li>
-                            <li class = "nav-item"><a class = "nav-link p-0" href = "support.html">&nbsp;Support |</a></li>
-                            <li class = "nav-item"><a class = "nav-link p-0" href = "affiliate.html">&nbsp;Affiliate |</a></li>
-                            <li class = "nav-item"><a class = "nav-link p-0" href = "careers.html">&nbsp;Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-1">
-                        <a href="#"><i class="fab fa-facebook-messenger fa-5x mt-5" style="color: #fff;border: 1px solid #fff; border-radius: 5px;"></i></a>
-                    </div>
+<body style="font-size: 16px;">
+    <div class="topheader py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4">
+                    <a href="https://www.facebook.com/Quickgrab.io" target="_blank"><i class="fab fa-facebook-square pr-2"></i></a>
+                    <a href="https://www.facebook.com/Quickgrab.io" target="_blank"><i class="fab fa-twitter-square pr-2"></i></a>
+                    <a href="https://www.facebook.com/Quickgrab.io" target="_blank"><i class="fab fa-google-plus pr-2"></i></a>
+                    <a href="https://www.facebook.com/Quickgrab.io" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                    <nav class="nav topheader-nav">
+                        <a class="nav-link ml-4" href="#"><i class="fas fa-cog"></i>&nbsp;&nbsp;GrabCard</a>
+                        <a class="nav-link ml-4" href="#"><i class="fas fa-life-ring"></i>&nbsp;&nbsp;Submit support Ticket</a>
+                        <a class="nav-link ml-4" href="#"><i class="fas fa-lock"></i>&nbsp;&nbsp;Manage Account</a>
+                      </nav>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="navigation">
-            <div class="container">
-                <nav class = "navbar navbar-expand-lg">
-                    <a class = "navbar-brand" href = "https://quickgrab.io"><img src="./images/logo.png" alt="QuickGrab" class="navbar-logo d-md-block d-lg-none"></a>
-                    <button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" 
-                        data-target = "#navbarNavDropdown" aria-controls = "navbarNavDropdown" 
-                        aria-expanded = "false" aria-label = "Toggle navigation">
-                           
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x" style="color: #fff;"></i></span>
-                    </button>
-                    <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
-                        <ul class = "navbar-nav ml-5">
-                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#couponModal">GrabCard</a></li>
-                            <li class = "nav-item"><a class = "nav-link text-center-sm" href = "marketplace.html">marketplace</a></li>
-                            <li class = "nav-item"><a class = "nav-link" href = "earn.html">Earn Travelling</a></li>
-                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#registerModal">Register</a></li>
-                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#loginModal">Sign In</a></li>
-                            <li class = "nav-item"><a class = "nav-link" href = "#">Create Order</a></li>
+    <div class="topmenu pb-2" data-spy="affix" data-offset-top="197">
+        <div class="container">
+            <nav class = "navbar navbar-expand-lg p-0 mt-4 mb-3">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <a class = "navbar-brand" href = "https://quickgrab.io"><img src="./images/logo.png" alt="QuickGrab" class="navbar-logo"></a>
+                        <button class = "navbar-toggler navbar-toggler-end" type = "button" data-toggle = "collapse" 
+                            data-target = "#navbarNavDropdown" aria-controls = "navbarNavDropdown" 
+                            aria-expanded = "false" aria-label = "Toggle navigation">
+                               
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x" style=""></i></span>
+                        </button>
+                    </div>
+                    <div class = "collapse navbar-collapse justify-content-end topmenu-nav" id = "navbarNavDropdown">
+                        <ul class = "navbar-nav mr-5">
+                            <li class = "nav-item"><a class = "nav-link text-center-sm" href = "marketplace.html"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Marketplace</a></li>
+                            <li class = "nav-item"><a class = "nav-link" href = "earn.html"><i class="fas fa-plane-departure"></i>&nbsp;&nbsp;Earn Travelling</a></li>
+                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#registerModal"><i class="fas fa-user"></i>&nbsp;&nbsp;Register</a></li>
+                            <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#loginModal">
+                            <i class="fas fa-users"></i>&nbsp;&nbsp;Sign In</a></li>
+                            <li class = "nav-item"><a class = "nav-link btn-primary mt-1" href = "#">Create Order</a></li>
                         </ul>  
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
 
     <div class="modal fade text-center py-5"  id="couponModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-md" role="document">
@@ -240,153 +240,385 @@
         </div>
     </div>
     
-    <section>
-        <div class="section inn-content buyers pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-10 col-xl-8 mx-lg-auto">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 col-xs-12">
-                                <h2 class="mt-5">Shop and Save</h2>
-                                <p class="text-justify mb-4">Worry less about shipping, custom and tax fee. with Quickgrab you can 
-                                    shop any store around the world and get your item delivered to you by travellers heading your way
-                                </p>
-                                <button class="btn btn-default">Create Shop Cart</button>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xs-12">
-                                <img class="" src="./images/icon-p-pay-bills@2x.png" style="max-width: 100%; height: auto;">
+    <div class="content-wrapper">
+        <section class="shop-preview">
+            <div class="shop-content-preview">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-10 col-xl-8 mx-lg-auto">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-xs-12">
+                                    <h1 class="lead mt-5">Shop and Save</h2>
+                                    <p class="text-justify mb-4">Worry less about shipping, custom and tax fee. with Quickgrab you can shop any store around the world and get your item delivered to you by travellers heading your way</p>
+                                    <button class="btn btn-primary">Create Shop Cart</button>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-xs-12">
+                                    <img class="" src="./images/icon-p-pay-bills@2x.png" style="max-width: 100%; height: auto;">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section inn-content travelers">
+        </section>
+
+        <section class="work-preview">
             <div class="container">
+                <h1 class="title text-center w-50 mx-auto my-3 pb-3">How Quickgrab Works</h1>
+                <p class="text-center w-75 mx-auto mt-4 mb-5">Find out how quickgrab works for both sellers and buyer</p>
                 <div class="row">
-                    <div class="col-md-12 col-lg-10 col-xl-8 mx-lg-auto">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <img class="" src="./images/icon-p-pay-anyone@2x.png" style="max-width: 100%; height: auto;">
+                    <div class="col-md-6">
+                        <div class="accordion" id="accordionShop">
+                            <div class="card">
+                                <div class="card-header py-0" id="headingShopOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseShopOne" aria-expanded="true" aria-controls="collapseShopOne">
+                                            <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Tell us about the item youre looking for</p>
+                                        </button>
+                                    </h5>
+                              </div>
+                              <div id="collapseShopOne" class="collapse border-bottom" aria-labelledby="headingShopOne"                             data-parent="#accordionShop">
+                                    <div class="card-body">
+                                        <p>With Grabr, you can get any item from around the world. To get started, create an order for a product you want and include details such as where a traveler can buy it and how much it costs.</p>
+                                    </div>
+                              </div>
                             </div>
-                            <div class="col-sm-6">
-                                <h2 class="mt-5">Travel and Earn</h2>
-                                <p class="text-justify mb-4">As a traveller, QuickGrab offers you the opportunity to make extra cash while you 
-                                    travel, all you just have to do is make an offer to deliver a shopper item and make
-                                extra income</p>
-                                <button class="btn btn-default">Earn Travelling</button>
+
+                            <div class="card mt-2">
+                                <div class="card-header py-0" id="headingShopTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseShopTwo" aria-expanded="false" aria-controls="collapseShopTwo">
+                                            <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Wait for travelers to make delivery offers</p>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseShopTwo" class="collapse border-bottom" aria-labelledby="headingShopTwo"                         data-parent="#accordionShop">
+                                    <div class="card-body">
+                                        <p>Once you publish your order, we’ll share it with our entire traveler community. Then, travelers heading to your city will bid to deliver it by making an offer.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-2">
+                                <div class="card-header py-0" id="headingShopThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"                               data-target="#collapseShopThree" aria-expanded="false" aria-controls="collapseShopThree">
+                                            <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Agree on a monetary reward for your traveler</p>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseShopThree" class="collapse border-bottom" aria-labelledby="headingShopThree"                     data-parent="#accordionShop">
+                                    <div class="card-body">
+                                    <p>Grabr auto-calculates all applicable taxes and fees, including the monetary reward you agree to pay your traveler for delivering your item. If your traveler doesn’t deliver your order for any reason, you will receive a full refund.</p>
+                                </div>
+                            </div>
+
+                            <div class="card mt-2">
+                                <div class="card-header py-0" id="headingShopFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseShopFour" aria-expanded="false" aria-controls="collapseShopFour">
+                                            <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Wait for travelers to make delivery offers</p>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseShopFour" class="collapse border-bottom" aria-labelledby="headingShopFour"                         data-parent="#accordionShop">
+                                    <div class="card-body">
+                                        <p>Once you publish your order, we’ll share it with our entire traveler community. Then, travelers heading to your city will bid to deliver it by making an offer.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                        <div class="accordion" id="accordionTravel">
+                            <div class="card">
+                              <div class="card-header py-0" id="headingOne">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTravelOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Find an order you can deliver and make an offer
+                                    </p>
+                                  </button>
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseTravelOne" class="collapse border-bottom" aria-labelledby="headingOne" data-parent="#accordionTravel">
+                                <div class="card-body">
+                                    Search for orders based on where are traveling to next. Make an offer and set your traveler reward—the amount of money your shopper will pay you for delivering their item.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card mt-2">
+                              <div class="card-header py-0" id="headingTravelTwo">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTravelTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Confirm order details with your shopper
+                                    </p>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseTravelTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTravel">
+                                <div class="card-body">
+                                    Use Grabr’s messenger to confirm order details with your shopper like the size and color of the item. You can also ask if they have other orders they’d like delivered.r item.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card mt-2">
+                              <div class="card-header py-0" id="headingTravelThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p class="accordion-title m-0"><span class="ti-angle-double-down"></span>&nbsp;&nbsp;&nbsp;Buy the item with your own money
+                                    </p>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse border-bottom" aria-labelledby="headingThree" data-parent="#accordionTravel">
+                                <div class="card-body">
+                                    This way, you know exactly what you are bringing. Upon delivery, you will be reimbursed for the price of the item and paid your reward.
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="travel-preview">
+            <div class="travel-content-preview">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-10 col-xl-8 mx-lg-auto">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="" src="./images/icon-p-pay-anyone@2x.png" style="max-width: 100%; height: auto;">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h1 class="lead mt-5">Travel and Earn</h1>
+                                    <p class="text-justify mb-4">As a traveller, QuickGrab offers you the opportunity to make extra cash while you travel, all you just have to do is make an offer to deliver a shopper item and make
+                                    extra income</p>
+                                    <button class="btn btn-primary">Earn Travelling</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="wrap">
-            <nav class="sp-tab">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="nav nav-tabs nav-fill sp-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-                                <span><i class="fas fa-shield-alt fa-3x mb-2"></i></span><br>
-                                <span class="d-md-none d-lg-block d-sm-none d-none">Secure Payment</span>
-                            </a>
-                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
-                                <span><i class="fas fa-truck fa-3x mb-2"></i></span><br>
-                                <span class="d-md-none d-lg-block d-sm-none d-none">Guarantee Delivery</span></a>
-                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
-                                <span><i class="fab fa-cc-mastercard fa-3x mb-2"></i></span><br>
-                                <span class="d-md-none d-lg-block d-sm-none d-none">Multiple Payments</span></a></a>
-                            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">
-                                <span><i class="fas fa-wallet fa-3x mb-2"></i></span><br>
-                                <span class="d-md-none d-lg-block d-sm-none d-none">No Hidden Fees</span></a></a>
-                            <a class="nav-item nav-link" id="nav-donate-tab" data-toggle="tab" href="#nav-donate" role="tab" aria-controls="nav-about" aria-selected="false">
-                                <span><i class="fas fa-users fa-3x mb-2"></i></span><br>
-                                <span class="d-md-none d-lg-block d-sm-none d-none">Verified Users</span></a></a>
+        <section class="tab-toggler pb-0">
+            <div class="toggle-content-wrapper">
+                <nav class="toggle-tab-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="nav nav-tabs nav-fill navbar-toggle-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link" id="nav-users-tab" data-toggle="tab" href="#nav-users" role="tab" aria-controls="nav-users" aria-selected="false">
+                                    <span><i class="fas fa-users fa-3x mb-2"></i></span><br>
+                                    <span class="d-md-none d-lg-block d-sm-none d-none">Verified Members</span>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-payment-tab" data-toggle="tab" href="#nav-payment" role="tab" aria-controls="nav-payment" aria-selected="false">
+                                    <span><i class="fab fa-cc-mastercard fa-3x mb-2"></i></span><br>
+                                    <span class="d-md-none d-lg-block d-sm-none d-none">Payment Options</span>
+                                </a>
+                                <a class="nav-item nav-link active" id="nav-secure-tab" data-toggle="tab" href="#nav-secure" role="tab" aria-controls="nav-secure" aria-selected="true">
+                                    <span><i class="fas fa-shield-alt fa-3x mb-2"></i></span><br>
+                                    <span class="d-md-none d-lg-block d-sm-none d-none">Secure Payment</span>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-fees-tab" data-toggle="tab" href="#nav-fees" role="tab" aria-controls="nav-fees" aria-selected="false">
+                                    <span><i class="fas fa-wallet fa-3x mb-2"></i></span><br>
+                                    <span class="d-md-none d-lg-block d-sm-none d-none">No Hidden Fees</span>
+                                </a>
+                                <a class="nav-item nav-link" id="nav-delivery-tab" data-toggle="tab" href="#nav-delivery" role="tab" aria-controls="nav-delivery" aria-selected="false">
+                                    <span><i class="fas fa-truck fa-3x mb-2"></i></span><br>
+                                    <span class="d-md-none d-lg-block d-sm-none d-none">Guarantee Delivery</span>
+                                </a>
+                            </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                </div>       
-            </nav>
-            <div class="sp-tabs-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9 mx-auto">
-                                    <div class="tab-content" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
-                                                        <div style="height:4px;width:100px;background:#0D3250;opacity:0.5;"></div>
-                                                        <p class="text-justify mt-3">Your money is safe with quickgrab every step of the way. quickgrab uses a secure encrypted payment system and you have a money back guarantee. Tap into our GrabCard and enjoy seemless shopping experience</p>
-                                                        <a href="#">grabcard</a>
-                                                    </div>
-                                                    <div class="col-md-5"><img src="./images/icon-p-website@2x.png"></div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <h2 class="mt-3 pt-5">Guarantee Delivery</h2>
-                                                        <div style="height:4px;width:100px;background:#ff6600;opacity:0.5;"></div>
-                                                        <p class="text-justify mt-3">With our verified traveller, your delivery is guaranteed. If a traveler cancels your order or delivers an item in bad condition, we will issue a full refund and aim to match you with a new traveler.</p>
-                                                    </div>
-                                                    <div class="col-md-5"><img src="./images/icon-p-shop@2x.png"></div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <h2 class="mt-3 pt-5">Secure Payment</h2>
-                                                        <div style="height:4px;width:100px;background:#ff6600;opacity:0.5;"></div>
-                                                        <p class="text-justify mt-3 mb-5">To make your life easier, we accept a range of payment methods including Visa, MasterCard, Bitcoin, GrabCard, and American Express, with more options available soon.</p>
-                                                        <div class="payment">
-                                                            <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><rect fill="#F8F8F8" y="0" width="38" height="25" rx="2" vector-effect="non-scaling-stroke"></rect><path fill="#F99F1B" fill-rule="evenodd" clip-rule="evenodd" d="M0 21.053v.828c.01.836.35 1.633.944 2.217A3.138 3.138 0 0 0 3.171 25h31.658a3.133 3.133 0 0 0 2.231-.906 3.158 3.158 0 0 0 .94-2.226v-.815H0z" vector-effect="non-scaling-stroke"></path><path fill="#2D4990" fill-rule="evenodd" clip-rule="evenodd" d="M0 3.947v-.829C.01 2.284.35 1.487.944.902A3.138 3.138 0 0 1 3.171 0h31.658a3.134 3.134 0 0 1 2.231.906A3.158 3.158 0 0 1 38 3.132v.815H0zm18.214 4.106l-1.94 8.907h-2.319l1.913-8.907h2.346zm9.788 5.763l1.232-3.356.707 3.356h-1.939zm2.608 3.158h2.149l-1.887-8.921h-1.979a1.045 1.045 0 0 0-.996.658L24.4 16.96h2.45l.485-1.316h2.987l.289 1.316v.013zm-6.08-2.921c0-2.343-3.29-2.474-3.276-3.527.013-.316.327-.658.996-.75a4.439 4.439 0 0 1 2.293.395l.406-1.881a6.308 6.308 0 0 0-2.175-.395c-2.306 0-3.931 1.21-3.931 2.947-.013 1.276 1.153 2 2.03 2.421.918.434 1.22.724 1.22 1.105-.014.606-.734.869-1.403.869-1.179.026-1.847-.303-2.385-.553l-.432 1.947c.55.25 1.56.461 2.595.474 2.45 0 4.049-1.184 4.062-3.052zm-9.658-6l-3.773 8.92h-2.45L6.787 9.869c-.118-.434-.223-.592-.564-.789a9.838 9.838 0 0 0-2.293-.75l.052-.263h3.97c.499 0 .957.342 1.075.92l.983 5.146 2.424-6.053h2.437v-.026z" vector-effect="non-scaling-stroke"></path></svg>
-
-                                                            <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><rect fill="#000" width="38" height="25" rx="3" vector-effect="non-scaling-stroke"></rect><path fill="#fff" d="M11.348 22.227v-1.28a.75.75 0 0 0-.659-.811h-.103c-.268-.022-.536.128-.7.363-.145-.235-.392-.385-.66-.363-.226-.022-.453.106-.597.299v-.257h-.391v2.049h.412v-1.174c-.021-.277.164-.512.412-.533h.082c.288 0 .453.192.453.533v1.174h.392v-1.174c-.021-.277.164-.512.432-.533h.083c.288 0 .453.192.453.533v1.174h.391zm6.407-2.027h-.721v-.619h-.392v.619h-.412v.363h.412v.96c0 .47.165.747.66.747.185 0 .37-.064.535-.15l-.124-.363a.817.817 0 0 1-.37.107c-.206 0-.31-.128-.31-.341v-.982h.722V20.2zm3.666-.064a.616.616 0 0 0-.535.299v-.257h-.392v2.049h.392v-1.152c0-.342.165-.555.432-.555.083 0 .186.021.268.043l.124-.385a1.178 1.178 0 0 0-.289-.042zm-5.52.213a1.515 1.515 0 0 0-.804-.213c-.494 0-.803.234-.803.64 0 .341.226.533.659.597l.206.022c.227.042.37.128.37.234 0 .15-.164.256-.473.256-.227 0-.474-.064-.66-.213l-.205.32c.247.17.556.277.844.256.577 0 .886-.277.886-.661s-.247-.534-.659-.598l-.206-.021c-.185-.021-.35-.085-.35-.213s.165-.256.391-.256c.227 0 .433.064.618.17l.186-.32zm5.973.854c-.02.554.392 1.045.927 1.067h.103a.94.94 0 0 0 .7-.235l-.205-.32a1.1 1.1 0 0 1-.515.192.69.69 0 0 1-.598-.768.654.654 0 0 1 .598-.62c.185 0 .37.065.515.193l.206-.32a.968.968 0 0 0-.7-.235 1 1 0 0 0-1.03.96c-.021.022-.021.043 0 .086zm-2.78-1.067c-.577 0-.969.427-.969 1.067a.992.992 0 0 0 .907 1.067h.103c.288 0 .576-.086.803-.278l-.206-.299a.964.964 0 0 1-.577.214c-.309.021-.556-.214-.597-.534h1.483v-.17c-.02-.64-.391-1.067-.948-1.067zm0 .384c.267 0 .514.213.514.512v.021h-1.05c.02-.32.247-.533.535-.533zm-5.336.683v-1.025h-.391v.256a.832.832 0 0 0-.639-.298c-.576 0-1.03.47-1.03 1.067s.454 1.067 1.03 1.067a.832.832 0 0 0 .639-.3v.257h.391v-1.024zm-1.606 0c-.021-.363.226-.662.576-.683h.042a.69.69 0 0 1 .597.768.654.654 0 0 1-.598.619c-.35 0-.617-.278-.617-.64v-.064zm15.223-1.067a.616.616 0 0 0-.536.299v-.257h-.391v2.049h.39v-1.152c0-.342.166-.555.433-.555.083 0 .186.021.268.043l.124-.385a1.178 1.178 0 0 0-.288-.042zm3.172 1.813c.02 0 .062 0 .082.022.02 0 .041.021.062.042.02.022.041.043.041.064.02.043.02.107 0 .15-.02.021-.02.043-.041.064-.02.021-.041.043-.062.043-.02.02-.041.02-.082.02-.083 0-.144-.042-.186-.127a.188.188 0 0 1 0-.15c.021-.02.021-.042.042-.064.02-.02.04-.042.061-.042.042-.022.062-.043.083-.022zm0 .342c.02 0 .041 0 .062-.021.02 0 .04-.022.04-.043a.146.146 0 0 0 0-.214l-.04-.042c-.021 0-.042-.022-.062-.022-.02 0-.041 0-.062.022-.02 0-.041.021-.041.042a.146.146 0 0 0 0 .214c.02.021.041.021.041.043.02.02.041.02.062.02zm.02-.235c.021 0 .042 0 .062.021.02.022.02.022.02.043 0 .021 0 .021-.02.043-.02.021-.02.021-.041.021l.062.064h-.041l-.062-.064h-.02v.064h-.042v-.192h.082zm-.04.021v.043h.061v-.043h-.062zm-4.656-.853V20.2h-.392v.256a.832.832 0 0 0-.638-.299c-.577 0-1.03.47-1.03 1.067s.453 1.067 1.03 1.067a.832.832 0 0 0 .638-.299v.256h.392v-1.024zm-1.607 0c-.02-.363.227-.662.577-.683h.04a.69.69 0 0 1 .598.768.654.654 0 0 1-.597.62c-.35 0-.618-.278-.618-.641v-.064zm5.582 0v-1.835h-.391v1.067a.832.832 0 0 0-.639-.299c-.576 0-1.03.47-1.03 1.067s.454 1.067 1.03 1.067a.832.832 0 0 0 .639-.299v.256h.391v-1.024zm-1.606 0c-.021-.363.226-.662.576-.683h.042a.68.68 0 0 1 .556.79.667.667 0 0 1-.577.576c-.35 0-.618-.278-.618-.64.02-.022.02-.043.02-.043z" vector-effect="non-scaling-stroke"></path><path fill="#FF5F00" d="M22.245 4.645h-6.489v12.077h6.49V4.645z" vector-effect="non-scaling-stroke"></path><path fill="#EB001B" d="M16.168 10.683c0-2.347 1.051-4.587 2.843-6.038-3.234-2.625-7.89-2.049-10.423 1.301-2.534 3.35-1.978 8.151 1.256 10.776 2.699 2.197 6.469 2.197 9.167 0-1.792-1.451-2.843-3.67-2.843-6.039z" vector-effect="non-scaling-stroke"></path><path fill="#F79E1B" d="M30.3 15.441v-.256h.103v-.042h-.248v.042h.103v.256h.042zm.473 0v-.298h-.082l-.082.213-.083-.213h-.082v.298h.041v-.234l.082.192h.062l.083-.192v.234h.061zM31 10.683c0 4.246-3.317 7.682-7.416 7.682a7.18 7.18 0 0 1-4.573-1.643c3.214-2.625 3.77-7.447 1.236-10.776a7.389 7.389 0 0 0-1.256-1.301c3.213-2.625 7.89-2.049 10.423 1.301A7.778 7.778 0 0 1 31 10.683z" vector-effect="non-scaling-stroke"></path></svg>
-
-                                                            <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><rect fill="#F8F8F8" width="38" height="25" rx="3" vector-effect="non-scaling-stroke"></rect><path fill="none" d="M5.241 9.21H34.07v7.619H5.241z" vector-effect="non-scaling-stroke"></path><path fill="#009CDE" d="M24.696 9.219h-2.245a.317.317 0 0 0-.308.259l-.905 5.697a.178.178 0 0 0 .103.196.182.182 0 0 0 .078.016h1.153a.216.216 0 0 0 .214-.179l.262-1.614a.304.304 0 0 1 .301-.265h.717a2.318 2.318 0 0 0 1.729-.517 2.28 2.28 0 0 0 .818-1.595 1.686 1.686 0 0 0-.288-1.434 2.095 2.095 0 0 0-1.629-.564zm.255 2.078c-.12.797-.737.797-1.34.797h-.335l.234-1.487a.189.189 0 0 1 .188-.153h.154c.402 0 .784 0 .985.226a.74.74 0 0 1 .107.617" vector-effect="non-scaling-stroke"></path><path fill="#003087" d="M8.704 9.218H6.46a.31.31 0 0 0-.302.26l-.911 5.697a.184.184 0 0 0 .105.208.189.189 0 0 0 .082.017h1.073a.31.31 0 0 0 .301-.259l.248-1.534a.305.305 0 0 1 .309-.265h.71a2.32 2.32 0 0 0 1.729-.517 2.281 2.281 0 0 0 .818-1.595 1.704 1.704 0 0 0-.281-1.434 2.109 2.109 0 0 0-1.636-.564v-.014zm.262 2.092c-.128.797-.738.797-1.34.797H7.31l.241-1.488a.185.185 0 0 1 .181-.152h.155c.408 0 .79 0 .985.225a.74.74 0 0 1 .114.618m6.421-.04h-1.08a.188.188 0 0 0-.18.16l-.047.299-.087-.107a1.522 1.522 0 0 0-1.274-.451 2.479 2.479 0 0 0-1.597.628c-.44.393-.722.929-.796 1.51a1.973 1.973 0 0 0 .402 1.64 1.67 1.67 0 0 0 1.341.538 2.066 2.066 0 0 0 1.488-.611l-.047.299a.178.178 0 0 0 .103.196.182.182 0 0 0 .078.016h.972a.317.317 0 0 0 .308-.259l.577-3.638a.184.184 0 0 0-.103-.2.19.19 0 0 0-.078-.02h.02zm-1.502 2.072c-.04.291-.19.556-.418.744a1.2 1.2 0 0 1-.815.272.92.92 0 0 1-.67-.285.886.886 0 0 1-.168-.75c.041-.286.185-.548.406-.736.22-.188.503-.29.794-.287a.898.898 0 0 1 .717.292.9.9 0 0 1 .181.75" vector-effect="non-scaling-stroke"></path><path fill="#009CDE" d="M31.392 11.27H30.32a.182.182 0 0 0-.181.16l-.054.299-.073-.107a1.51 1.51 0 0 0-1.254-.451 2.472 2.472 0 0 0-1.599.627 2.43 2.43 0 0 0-.794 1.511 1.973 1.973 0 0 0 .382 1.64 1.696 1.696 0 0 0 1.34.538 2.069 2.069 0 0 0 1.489-.61l-.047.298a.176.176 0 0 0 .04.149.18.18 0 0 0 .14.063h.966a.31.31 0 0 0 .308-.259l.584-3.638a.191.191 0 0 0-.11-.2.197.197 0 0 0-.078-.02h.013zm-1.494 2.072a1.18 1.18 0 0 1-.412.737 1.2 1.2 0 0 1-.802.28.918.918 0 0 1-.717-.286.885.885 0 0 1-.167-.75c.04-.286.184-.548.405-.736.221-.188.503-.29.795-.287a.905.905 0 0 1 .717.292.925.925 0 0 1 .18.75z" vector-effect="non-scaling-stroke"></path><path fill="#003087" d="M21.124 11.27h-1.08a.317.317 0 0 0-.26.14l-1.488 2.171-.63-2.085a.312.312 0 0 0-.295-.226h-1.066a.188.188 0 0 0-.182.16.184.184 0 0 0 .008.086l1.186 3.46-1.12 1.56a.185.185 0 0 0 .155.292h1.079a.324.324 0 0 0 .255-.133l3.592-5.132a.19.19 0 0 0 .006-.19.194.194 0 0 0-.16-.102z" vector-effect="non-scaling-stroke"></path><path fill="#009CDE" d="M32.66 9.378l-.92 5.796a.176.176 0 0 0 .04.15.18.18 0 0 0 .142.063h.925a.31.31 0 0 0 .308-.259l.912-5.704a.183.183 0 0 0-.044-.149.188.188 0 0 0-.144-.063h-1.032a.189.189 0 0 0-.188.159" vector-effect="non-scaling-stroke"></path></svg>
-                                                            <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><path fill="#0078A9" d="M35 25H3c-1.7 0-3-1.3-3-3V3c0-1.7 1.3-3 3-3h32c1.7 0 3 1.3 3 3v19c0 1.7-1.3 3-3 3z" vector-effect="non-scaling-stroke"></path><path fill="#fff" d="M11.8 11.9v-.4l-.2.4H10l-.2-.4v.4H6.9l-.3-.8H6l-.4.8H4.1V9.5L5.2 7h2.1l.3.7v-.8h2.6l.6 1.2.6-1.2h8.3s.4 0 .7.2v-.2h2.1v.3s.4-.3.9-.3h3.7l.3.7v-.7h2.4l.4.7v-.7h2.3v5h-2.3l-.5-.9v.9h-2.9l-.4-.9h-.6l-.4.9h-1.7s-.6 0-1.1-.4v.4H19v-1.2c0-.2-.1-.2-.1-.2h-.1v1.3h-7v.1zM10.1 13h4.5l.7.7.7-.7h3.5s.3 0 .6.2V13h3.1c.4 0 .7.2.7.2V13h4v.2s.3-.2.7-.2h2.6v.2s.3-.2.7-.2h2v4.7s-.3.3-.8.3h-2.7v-.2s-.3.2-.6.2h-7.2v-1.2c0-.1-.1-.1-.2-.1h-.1v1.4h-2.2v-1.4s-.2.1-.7.1h-.8V18h-2.8l-.6-.8-.7.8H10v-5h.1z" vector-effect="non-scaling-stroke"></path><path fill="#0078A9" d="M24.4 13.8h2.9v.8h-2v.6h1.9v.7h-1.9v.7h2v.7h-2.9v-3.5zm8.4 1.4c1.1.1 1.2.6 1.2 1.2 0 .7-.5 1-1.1 1H31v-.8h1.4c.2 0 .6 0 .6-.3 0-.2-.1-.3-.3-.3h-.6c-1 0-1.2-.5-1.2-1.1 0-.7.5-1 1-1h1.8v.8h-1.3c-.3 0-.6 0-.6.3 0 .2.2.3.4.3 0-.2.5-.1.6-.1zm-3.3 0c1.1.1 1.2.6 1.2 1.2 0 .7-.5 1-1.1 1h-1.8v-.8h1.4c.2 0 .6 0 .6-.3 0-.2-.1-.3-.3-.3h-.6c-1 0-1.2-.5-1.2-1.1 0-.7.5-1 1-1h1.8v.8h-1.3c-.3 0-.6 0-.6.3 0 .2.2.3.4.3-.1-.2.4-.1.5-.1zm-10.4-1.4H16l-1 1.1-1-1.1h-3.4v3.6H14l1-1.2 1 1.2h1.7v-1.2h1.2c.5 0 1.3 0 1.3-1.3 0-.9-.6-1.1-1.1-1.1zm-5.6 2.8h-2v-.7h1.9v-.7h-1.9v-.7h2.1l.9 1-1 1.1zm3.4.4l-1.3-1.5 1.3-1.4V17zm1.9-1.6h-1.1v-.9h1.1c.4 0 .5.2.5.4 0 .3-.1.5-.5.5zm4.5.3c.5-.2.6-.6.6-1 0-.8-.6-1-1-1h-2.3v3.6h.9V16h1.1c.3 0 .4.3.4.6v.7h1v-.7c-.1-.5-.2-.8-.7-.9zm-.7-.3h-1.1v-.8h1.1c.4 0 .5.2.5.4s-.1.4-.5.4zm-.7-7.8H21v3.6h.9V7.6zm-8.1.1h2.9v.7h-2v.7h1.9v.7h-1.9v.7h2v.7h-2.9V7.7zm6.1 1.9c.5-.2.6-.6.6-1 0-.8-.6-1-1-1h-2.3v3.6h.9V10h1.1c.3 0 .4.3.4.6v.7h.8v-.7c.1-.7-.1-1-.5-1zm-.7-.4h-1.1v-.8h1.1c.4 0 .5.2.5.4 0 .3-.2.4-.5.4zm-7.4-1.5L10.7 10l-1-2.3H8.3v3.4L6.8 7.7H5.6L4 11.3h1l.3-.8H7l.3.8h1.8V8.6l1.2 2.6h.8l1.2-2.6v2.6h.9V7.7h-1.4zM5.7 9.6l.5-1.2.5 1.2h-1zm25.2-2v2.5l-1.5-2.5h-1.3V11l-1.5-3.3h-1.2l-1.2 2.8h-.6c-.2 0-.5-.2-.5-.8v-.4c0-.8.5-.9 1-.9h.5v-.8h-1.1c-.4 0-1.3.3-1.3 1.8 0 1 .4 1.8 1.4 1.8h1.2l.3-.8h1.7l.3.8H29V8.6l1.6 2.6h1.2V7.6h-.9zm-5.4 2l.5-1.2.5 1.2h-1z" vector-effect="non-scaling-stroke"></path></svg>
+                    </div>       
+                </nav>
+                <div class="navbar-tabs-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 mx-auto">
+                                        <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade" id="nav-users" role="tabpanel" aria-labelledby="nav-users-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h2 class="mt-5 pt-3">Verified Users</h2>
+                                                            <p class="text-justify">Trust is our top priority at QuickGrab, and we work hard to ensure that our community treats all users with the utmost respect. Puting security measures in place between the shopper and traveller</p>
                                                         </div>
+                                                        <div class="col-md-6"><img src="./images/icon-p-donations@2x.png"></div>
                                                     </div>
-                                                    <div class="col-md-6"><img src="./images/icon-p-mobile@2x.png"></div>
+                                                </div>
+    
+                                                <div class="tab-pane fade" id="nav-payment" role="tabpanel" aria-labelledby="nav-payment-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h2 class="mt-5 pt-3">Multiple Payment</h2>
+                                                            <p class="text-justify mb-4">To make your life easier, we accept a range of payment methods including Visa, MasterCard, Bitcoin, Paypal, American Express, Bank Deposit & our very own GrabCard</p>
+                                                            <div class="payment">
+                                                                <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><rect fill="#F8F8F8" y="0" width="38" height="25" rx="2" vector-effect="non-scaling-stroke"></rect><path fill="#F99F1B" fill-rule="evenodd" clip-rule="evenodd" d="M0 21.053v.828c.01.836.35 1.633.944 2.217A3.138 3.138 0 0 0 3.171 25h31.658a3.133 3.133 0 0 0 2.231-.906 3.158 3.158 0 0 0 .94-2.226v-.815H0z" vector-effect="non-scaling-stroke"></path><path fill="#2D4990" fill-rule="evenodd" clip-rule="evenodd" d="M0 3.947v-.829C.01 2.284.35 1.487.944.902A3.138 3.138 0 0 1 3.171 0h31.658a3.134 3.134 0 0 1 2.231.906A3.158 3.158 0 0 1 38 3.132v.815H0zm18.214 4.106l-1.94 8.907h-2.319l1.913-8.907h2.346zm9.788 5.763l1.232-3.356.707 3.356h-1.939zm2.608 3.158h2.149l-1.887-8.921h-1.979a1.045 1.045 0 0 0-.996.658L24.4 16.96h2.45l.485-1.316h2.987l.289 1.316v.013zm-6.08-2.921c0-2.343-3.29-2.474-3.276-3.527.013-.316.327-.658.996-.75a4.439 4.439 0 0 1 2.293.395l.406-1.881a6.308 6.308 0 0 0-2.175-.395c-2.306 0-3.931 1.21-3.931 2.947-.013 1.276 1.153 2 2.03 2.421.918.434 1.22.724 1.22 1.105-.014.606-.734.869-1.403.869-1.179.026-1.847-.303-2.385-.553l-.432 1.947c.55.25 1.56.461 2.595.474 2.45 0 4.049-1.184 4.062-3.052zm-9.658-6l-3.773 8.92h-2.45L6.787 9.869c-.118-.434-.223-.592-.564-.789a9.838 9.838 0 0 0-2.293-.75l.052-.263h3.97c.499 0 .957.342 1.075.92l.983 5.146 2.424-6.053h2.437v-.026z" vector-effect="non-scaling-stroke"></path></svg>
+    
+                                                                <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><rect fill="#000" width="38" height="25" rx="3" vector-effect="non-scaling-stroke"></rect><path fill="#fff" d="M11.348 22.227v-1.28a.75.75 0 0 0-.659-.811h-.103c-.268-.022-.536.128-.7.363-.145-.235-.392-.385-.66-.363-.226-.022-.453.106-.597.299v-.257h-.391v2.049h.412v-1.174c-.021-.277.164-.512.412-.533h.082c.288 0 .453.192.453.533v1.174h.392v-1.174c-.021-.277.164-.512.432-.533h.083c.288 0 .453.192.453.533v1.174h.391zm6.407-2.027h-.721v-.619h-.392v.619h-.412v.363h.412v.96c0 .47.165.747.66.747.185 0 .37-.064.535-.15l-.124-.363a.817.817 0 0 1-.37.107c-.206 0-.31-.128-.31-.341v-.982h.722V20.2zm3.666-.064a.616.616 0 0 0-.535.299v-.257h-.392v2.049h.392v-1.152c0-.342.165-.555.432-.555.083 0 .186.021.268.043l.124-.385a1.178 1.178 0 0 0-.289-.042zm-5.52.213a1.515 1.515 0 0 0-.804-.213c-.494 0-.803.234-.803.64 0 .341.226.533.659.597l.206.022c.227.042.37.128.37.234 0 .15-.164.256-.473.256-.227 0-.474-.064-.66-.213l-.205.32c.247.17.556.277.844.256.577 0 .886-.277.886-.661s-.247-.534-.659-.598l-.206-.021c-.185-.021-.35-.085-.35-.213s.165-.256.391-.256c.227 0 .433.064.618.17l.186-.32zm5.973.854c-.02.554.392 1.045.927 1.067h.103a.94.94 0 0 0 .7-.235l-.205-.32a1.1 1.1 0 0 1-.515.192.69.69 0 0 1-.598-.768.654.654 0 0 1 .598-.62c.185 0 .37.065.515.193l.206-.32a.968.968 0 0 0-.7-.235 1 1 0 0 0-1.03.96c-.021.022-.021.043 0 .086zm-2.78-1.067c-.577 0-.969.427-.969 1.067a.992.992 0 0 0 .907 1.067h.103c.288 0 .576-.086.803-.278l-.206-.299a.964.964 0 0 1-.577.214c-.309.021-.556-.214-.597-.534h1.483v-.17c-.02-.64-.391-1.067-.948-1.067zm0 .384c.267 0 .514.213.514.512v.021h-1.05c.02-.32.247-.533.535-.533zm-5.336.683v-1.025h-.391v.256a.832.832 0 0 0-.639-.298c-.576 0-1.03.47-1.03 1.067s.454 1.067 1.03 1.067a.832.832 0 0 0 .639-.3v.257h.391v-1.024zm-1.606 0c-.021-.363.226-.662.576-.683h.042a.69.69 0 0 1 .597.768.654.654 0 0 1-.598.619c-.35 0-.617-.278-.617-.64v-.064zm15.223-1.067a.616.616 0 0 0-.536.299v-.257h-.391v2.049h.39v-1.152c0-.342.166-.555.433-.555.083 0 .186.021.268.043l.124-.385a1.178 1.178 0 0 0-.288-.042zm3.172 1.813c.02 0 .062 0 .082.022.02 0 .041.021.062.042.02.022.041.043.041.064.02.043.02.107 0 .15-.02.021-.02.043-.041.064-.02.021-.041.043-.062.043-.02.02-.041.02-.082.02-.083 0-.144-.042-.186-.127a.188.188 0 0 1 0-.15c.021-.02.021-.042.042-.064.02-.02.04-.042.061-.042.042-.022.062-.043.083-.022zm0 .342c.02 0 .041 0 .062-.021.02 0 .04-.022.04-.043a.146.146 0 0 0 0-.214l-.04-.042c-.021 0-.042-.022-.062-.022-.02 0-.041 0-.062.022-.02 0-.041.021-.041.042a.146.146 0 0 0 0 .214c.02.021.041.021.041.043.02.02.041.02.062.02zm.02-.235c.021 0 .042 0 .062.021.02.022.02.022.02.043 0 .021 0 .021-.02.043-.02.021-.02.021-.041.021l.062.064h-.041l-.062-.064h-.02v.064h-.042v-.192h.082zm-.04.021v.043h.061v-.043h-.062zm-4.656-.853V20.2h-.392v.256a.832.832 0 0 0-.638-.299c-.577 0-1.03.47-1.03 1.067s.453 1.067 1.03 1.067a.832.832 0 0 0 .638-.299v.256h.392v-1.024zm-1.607 0c-.02-.363.227-.662.577-.683h.04a.69.69 0 0 1 .598.768.654.654 0 0 1-.597.62c-.35 0-.618-.278-.618-.641v-.064zm5.582 0v-1.835h-.391v1.067a.832.832 0 0 0-.639-.299c-.576 0-1.03.47-1.03 1.067s.454 1.067 1.03 1.067a.832.832 0 0 0 .639-.299v.256h.391v-1.024zm-1.606 0c-.021-.363.226-.662.576-.683h.042a.68.68 0 0 1 .556.79.667.667 0 0 1-.577.576c-.35 0-.618-.278-.618-.64.02-.022.02-.043.02-.043z" vector-effect="non-scaling-stroke"></path><path fill="#FF5F00" d="M22.245 4.645h-6.489v12.077h6.49V4.645z" vector-effect="non-scaling-stroke"></path><path fill="#EB001B" d="M16.168 10.683c0-2.347 1.051-4.587 2.843-6.038-3.234-2.625-7.89-2.049-10.423 1.301-2.534 3.35-1.978 8.151 1.256 10.776 2.699 2.197 6.469 2.197 9.167 0-1.792-1.451-2.843-3.67-2.843-6.039z" vector-effect="non-scaling-stroke"></path><path fill="#F79E1B" d="M30.3 15.441v-.256h.103v-.042h-.248v.042h.103v.256h.042zm.473 0v-.298h-.082l-.082.213-.083-.213h-.082v.298h.041v-.234l.082.192h.062l.083-.192v.234h.061zM31 10.683c0 4.246-3.317 7.682-7.416 7.682a7.18 7.18 0 0 1-4.573-1.643c3.214-2.625 3.77-7.447 1.236-10.776a7.389 7.389 0 0 0-1.256-1.301c3.213-2.625 7.89-2.049 10.423 1.301A7.778 7.778 0 0 1 31 10.683z" vector-effect="non-scaling-stroke"></path></svg>
+    
+                                                                <svg fill="none" stroke="none" width="70" height="40" viewBox="0 0 38 25" xmlns="http://www.w3.org/2000/svg" class="w60 h-a mr10 mt10"><path fill="none" d="M0 0h38v25H0z" vector-effect="non-scaling-stroke"></path><path fill="#0078A9" d="M35 25H3c-1.7 0-3-1.3-3-3V3c0-1.7 1.3-3 3-3h32c1.7 0 3 1.3 3 3v19c0 1.7-1.3 3-3 3z" vector-effect="non-scaling-stroke"></path><path fill="#fff" d="M11.8 11.9v-.4l-.2.4H10l-.2-.4v.4H6.9l-.3-.8H6l-.4.8H4.1V9.5L5.2 7h2.1l.3.7v-.8h2.6l.6 1.2.6-1.2h8.3s.4 0 .7.2v-.2h2.1v.3s.4-.3.9-.3h3.7l.3.7v-.7h2.4l.4.7v-.7h2.3v5h-2.3l-.5-.9v.9h-2.9l-.4-.9h-.6l-.4.9h-1.7s-.6 0-1.1-.4v.4H19v-1.2c0-.2-.1-.2-.1-.2h-.1v1.3h-7v.1zM10.1 13h4.5l.7.7.7-.7h3.5s.3 0 .6.2V13h3.1c.4 0 .7.2.7.2V13h4v.2s.3-.2.7-.2h2.6v.2s.3-.2.7-.2h2v4.7s-.3.3-.8.3h-2.7v-.2s-.3.2-.6.2h-7.2v-1.2c0-.1-.1-.1-.2-.1h-.1v1.4h-2.2v-1.4s-.2.1-.7.1h-.8V18h-2.8l-.6-.8-.7.8H10v-5h.1z" vector-effect="non-scaling-stroke"></path><path fill="#0078A9" d="M24.4 13.8h2.9v.8h-2v.6h1.9v.7h-1.9v.7h2v.7h-2.9v-3.5zm8.4 1.4c1.1.1 1.2.6 1.2 1.2 0 .7-.5 1-1.1 1H31v-.8h1.4c.2 0 .6 0 .6-.3 0-.2-.1-.3-.3-.3h-.6c-1 0-1.2-.5-1.2-1.1 0-.7.5-1 1-1h1.8v.8h-1.3c-.3 0-.6 0-.6.3 0 .2.2.3.4.3 0-.2.5-.1.6-.1zm-3.3 0c1.1.1 1.2.6 1.2 1.2 0 .7-.5 1-1.1 1h-1.8v-.8h1.4c.2 0 .6 0 .6-.3 0-.2-.1-.3-.3-.3h-.6c-1 0-1.2-.5-1.2-1.1 0-.7.5-1 1-1h1.8v.8h-1.3c-.3 0-.6 0-.6.3 0 .2.2.3.4.3-.1-.2.4-.1.5-.1zm-10.4-1.4H16l-1 1.1-1-1.1h-3.4v3.6H14l1-1.2 1 1.2h1.7v-1.2h1.2c.5 0 1.3 0 1.3-1.3 0-.9-.6-1.1-1.1-1.1zm-5.6 2.8h-2v-.7h1.9v-.7h-1.9v-.7h2.1l.9 1-1 1.1zm3.4.4l-1.3-1.5 1.3-1.4V17zm1.9-1.6h-1.1v-.9h1.1c.4 0 .5.2.5.4 0 .3-.1.5-.5.5zm4.5.3c.5-.2.6-.6.6-1 0-.8-.6-1-1-1h-2.3v3.6h.9V16h1.1c.3 0 .4.3.4.6v.7h1v-.7c-.1-.5-.2-.8-.7-.9zm-.7-.3h-1.1v-.8h1.1c.4 0 .5.2.5.4s-.1.4-.5.4zm-.7-7.8H21v3.6h.9V7.6zm-8.1.1h2.9v.7h-2v.7h1.9v.7h-1.9v.7h2v.7h-2.9V7.7zm6.1 1.9c.5-.2.6-.6.6-1 0-.8-.6-1-1-1h-2.3v3.6h.9V10h1.1c.3 0 .4.3.4.6v.7h.8v-.7c.1-.7-.1-1-.5-1zm-.7-.4h-1.1v-.8h1.1c.4 0 .5.2.5.4 0 .3-.2.4-.5.4zm-7.4-1.5L10.7 10l-1-2.3H8.3v3.4L6.8 7.7H5.6L4 11.3h1l.3-.8H7l.3.8h1.8V8.6l1.2 2.6h.8l1.2-2.6v2.6h.9V7.7h-1.4zM5.7 9.6l.5-1.2.5 1.2h-1zm25.2-2v2.5l-1.5-2.5h-1.3V11l-1.5-3.3h-1.2l-1.2 2.8h-.6c-.2 0-.5-.2-.5-.8v-.4c0-.8.5-.9 1-.9h.5v-.8h-1.1c-.4 0-1.3.3-1.3 1.8 0 1 .4 1.8 1.4 1.8h1.2l.3-.8h1.7l.3.8H29V8.6l1.6 2.6h1.2V7.6h-.9zm-5.4 2l.5-1.2.5 1.2h-1z" vector-effect="non-scaling-stroke"></path></svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6"><img src="./images/icon-p-mobile@2x.png"></div>
+                                                    </div>
+                                                </div>
+    
+                                                
+                                                <div class="tab-pane fade show active" id="nav-secure" role="tabpanel" aria-labelledby="nav-secure-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h2 class="mt-5 pt-3">Secure Payment</h2>
+                                                            <p class="text-justify">Your money is safe with quickgrab every step of the way. quickgrab uses a secure encrypted payment system that ensure the security of your payment Information</p>
+                                                            <a href="#">grabcard</a>
+                                                        </div>
+                                                        <div class="col-md-5"><img src="./images/icon-p-website@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="nav-fees" role="tabpanel" aria-labelledby="nav-fees-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h2 class="mt-5 pt-3">No Hidden Fees</h2>
+                                                            <p class="text-justify">For full transparency, QuickGrab uses machine learning to calculate all applicable charges and fees before you publish your order, so you know exactly how much you are paying.</p>
+                                                        </div>
+                                                        <div class="col-md-6"><img src="./images/icon-p-delivery@2x.png"></div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="tab-pane fade" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h2 class="mt-5 pt-3">Guarantee Delivery</h2>
+                                                            <p class="text-justify">With our verified traveller, your delivery is guaranteed. If a traveler cancels your order or delivers an item in bad condition, we will issue a full refund and match you with a new traveler.</p>
+                                                        </div>
+                                                        <div class="col-md-5"><img src="./images/icon-p-shop@2x.png"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <h2 class="mt-3 pt-5">No Hidden Fees</h2>
-                                                        <div style="height:4px;width:100px;background:#ff6600;opacity:0.5;"></div>
-                                                        <p class="text-justify mt-3">For full transparency, QuickGrab uses machine learning to calculate all applicable charges and fees before you publish your order, so you know exactly how much you are paying, thereby reducing customs and tax fees</p>
-                                                    </div>
-                                                    <div class="col-md-6"><img src="./images/icon-p-delivery@2x.png"></div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="nav-donate" role="tabpanel" aria-labelledby="nav-about-tab">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <h2 class="mt-3 pt-5">Verified Users</h2>
-                                                        <div style="height:4px;width:100px;background:#ff6600;opacity:0.5;"></div>
-                                                        <p class="text-justify mt-3">Trust is our top priority at QuickGrab, and we work hard to ensure that our community treats all members with the utmost respect. Puting security measures in place between the shopper and traveller</p>
-                                                    </div>
-                                                    <div class="col-md-6"><img src="./images/icon-p-donations@2x.png"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>    
+        </section>
+
+        <section class="testimonial border-top">
+            <div class="container testimonial-content">
+                <h1 class="testimonial-title w-50 mx-auto my-3 pb-3 text-center">What do our customers think?</h1>
+                <h2 class="text-center w-75 mx-auto mt-3 mb-5">Don't just take our word for it. Find out what real customers are saying.</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="thumbnail testimonials w-100">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <img class="rounded-circle img-fluid mt-4 ml-3" src="./images/josh.jpeg" style="border: 8px solid #A50031; height: 140px; width: 135px;">
+                                                    <p class="text-center my-4">Joseph Israel <br><Small>CEO devopsnigeria</Small>
+                                                    <br><a href="#">devopsnigeria.com</a></p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="testimonials-content p-3">
+                                                        <p class="my-4 lead">Excellent Service</h5>
+                                                        <p> <i class="fas fa-quote-left"></i>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+
+                                                        <p class="my-4">Thank you QuickGrab <i class="fas fa-quote-right"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="thumbnail testimonials w-100">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <img class="rounded-circle img-fluid mt-4 ml-3" src="./images/josh.jpeg" style="border: 8px solid #A50031; height: 140px; width: 135px;">
+                                                    <p class="text-center my-4">Joseph Israel <br><Small>CEO devopsnigeria</Small>
+                                                    <br><a href="#">devopsnigeria.com</a></p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="testimonials-content p-3">
+                                                        <p class="my-4 lead">Excellent Service</h5>
+                                                        <p> <i class="fas fa-quote-left"></i>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+
+                                                        <p class="my-4">Thank you QuickGrab <i class="fas fa-quote-right"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="thumbnail testimonials w-100">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <img class="rounded-circle img-fluid mt-4 ml-3" src="./images/josh.jpeg" style="border: 8px solid #A50031; height: 140px; width: 135px;">
+                                                    <p class="text-center my-4">Joseph Israel <br><Small>CEO devopsnigeria</Small>
+                                                    <br><a href="#">devopsnigeria.com</a></p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="testimonials-content p-3">
+                                                        <p class="my-4 lead">Excellent Service</h5>
+                                                        <p> <i class="fas fa-quote-left"></i>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+
+                                                        <p class="my-4">Thank you QuickGrab <i class="fas fa-quote-right"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div> 
+                                    </div>
+                                </div>
+
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="inner">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="carousel-inner award p-4">
+                                        <p class="leade text-center">Uptime Award</p>
+                                        <img src="./images/great-uptime.png" class="img-fluid mx-5 mt-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        
-    </section>
+        </section>
+
+
+    </div>
 
     <footer>
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10 col-lg-7 mx-md-auto mx-lg-auto">
                     <a href="https://quickgrab.io"><img src="./images/flaticon-logo-footer.svg" width="150" class="mt-5"></a>
                     <ul class="nav justify-content-center">
                         <li class="nav-item"><a class="nav-link" href="">Terms & condition</a></li>
@@ -433,9 +665,9 @@
                 </div>
             </div>
             <div class="row copyrights">
-                <div class="col-md-12 pt-3">
+                <div class="col-md-7 mx-md-auto pt-3">
                     <div style="height:1px;width:150px;background:#ff6600;margin:1% auto;opacity:0.5;"></div>
-                    <p>QuickGrab is a project by <a href="">quickgrab</a>
+                    <p class="display-4">QuickGrab is a project by <a href="">devopsnigeria</a>
                     <br>
                     © 2013-2018 Quickgrab Company N.G. All rights reserved.</p>
                 </div>
