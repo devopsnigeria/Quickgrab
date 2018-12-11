@@ -85,7 +85,7 @@
   font-weight: 700; }
 @font-face {
   font-family: "Lato";
-  src: url("./fonts/Lato-Regular.ttf") format("truetype");
+  src: url("./fonts/Lato-Light.ttf") format("truetype");
   font-weight: 300; }
 @font-face {
   font-family: "Lato-Bold";
@@ -11005,15 +11005,15 @@ body, html {
 
 footer {
   background: #0D3250;
-  color: #eafbff;
+  color: #ddd;
   font-family: 'Trebuchet MS'; }
-  footer h5 {
-    text-transform: uppercase;
+  footer .copyrights a {
+    font-size: 12px;
+    color: #ddd; }
+  footer .copyrights p {
     font-size: 12px; }
-  footer .nav-link {
-    font-size: 14px;
-    color: #eafbff;
-    font-family: "Ubuntu"; }
+  footer .copyrights a:hover {
+    color: #007b5e; }
 
 .content-wrapper {
   /* shop preview end */ }
@@ -11041,11 +11041,17 @@ footer {
       letter-spacing: 1.12px;
       color: #333;
       padding: 12px 25px; }
+    @media (max-width: 767.98px) {
+      .content-wrapper .shop-preview .shop-content-preview .lead, .content-wrapper .shop-preview .shop-content-preview p {
+        text-align: center; } }
+    @media (max-width: 767.98px) {
+      .content-wrapper .shop-preview .shop-content-preview p {
+        text-align: center !important; } }
   .content-wrapper .work-preview {
     padding-top: 0px; }
     .content-wrapper .work-preview .title {
       font-size: 36px;
-      font-family: "Poppins";
+      font-family: "Lato";
       font-weight: lighter;
       border-bottom: 1px solid #E0E0E0; }
   .content-wrapper .travel-content-preview .lead {
@@ -11094,21 +11100,47 @@ footer {
 
 /* general content wrapper end */
 .testimonial {
-  background: #F0F0F0;
+  background: #dddddd;
   padding-top: 40px;
-  padding-bottom: 40px; }
-  .testimonial h1 {
+  padding-bottom: 40px;
+  font-family: "Lato" !important;
+  color: #000000; }
+  .testimonial .testimonial-title {
     font-size: 40px;
-    font-weight: lighter;
-    border-bottom: 1px solid #E0E0E0;
-    font-family: "Lato"; }
-  .testimonial h2 {
-    font-size: 20px;
-    font-family: "Lato"; }
+    border-bottom: 1px solid #E0E0E0; }
+  .testimonial .testimonial-lead {
+    font-size: 18px; }
   .testimonial .carousel-inner {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
     min-height: 300px; }
+    .testimonial .carousel-inner .comment {
+      font-size: 12px;
+      font-family: "Poppins";
+      color: #000000; }
+    .testimonial .carousel-inner .lead {
+      font-size: 20px;
+      font-family: "Lato";
+      font-weight: 900; }
+    .testimonial .carousel-inner p {
+      font-family: "Poppins";
+      font-weight: 700;
+      color: #5faf00; }
+  .testimonial .carousel-indicators li {
+    background: #dddddd; }
+  .testimonial .carousel-indicators .active {
+    background: #5faf00; }
+
+.active-orders {
+  font-family: "Montserrat"; }
+  .active-orders .card {
+    border: none; }
+  .active-orders .card-title {
+    font-weight: bold;
+    font-family: "Montserrat-Bold";
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    line-height: 22px; }
 
 /*# sourceMappingURL=main.css.map */
