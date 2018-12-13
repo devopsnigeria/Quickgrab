@@ -92,6 +92,9 @@
   src: url("./fonts/Lato-Bold.ttf") format("truetype");
   font-weight: 700; }
 @font-face {
+  font-family: "Lato-Black";
+  src: url("./fonts/Lato-Black.ttf") format("truetype"); }
+@font-face {
   font-family: "MavenPro";
   src: url("./fonts/MavenPro-Regular.ttf") format("truetype");
   font-weight: 400; }
@@ -10926,35 +10929,105 @@ body, html {
   height: 100%;
   width: 100%; }
 
-.topheader {
-  background: #F0F0F0;
-  width: 100%;
-  height: 50px;
-  font-size: 15px; }
-  .topheader .fab {
-    color: #ADADAD;
-    margin-top: 5px;
-    font-size: 25px; }
-  .topheader .nav-link {
-    color: #909090;
-    font-weight: 400;
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px; }
-  .topheader .btn-primary {
+header .header .topNav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 12px;
+  color: #007b5e; }
+header .header .topNav .fab {
+  font-size: 20px; }
+header .header .navMenu .nav-link {
+  color: #005a82;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  line-height: 80px;
+  font-family: "Lato-Black"; }
+header .header .navMenu .nav-item {
+  padding: 0 35px; }
+header .header .navMenu .active {
+  border-bottom: 2px solid #fd5001; }
+header .header .navMenu a:hover {
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107; }
+header .header .navMenu .btn-primary {
+  color: #fff;
+  padding: 0 40px;
+  line-height: 50px;
+  font-size: 10px;
+  display: inline-block;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.hero {
+  text-align: center;
+  padding-top: 66px;
+  background: url(../images/homepage.svg) top center/cover no-repeat #fff;
+  color: #fff;
+  padding-bottom: 280px; }
+  .hero h1 {
+    font-size: 60px;
+    font-family: "GalanoGrotesqueAltExtraBold";
+    font-weight: bolder; }
+  .hero h2 {
+    font-size: 28px;
+    font-family: "GalanoGrotesqueAltLight";
+    line-height: 40px;
+    font-weight: bold; }
+  .hero .form-control {
+    background-color: rgba(3, 68, 102, 0.17);
+    padding: 5px 20px 5px 5px;
+    height: 43px;
+    border-radius: 50px;
+    padding-left: 40px;
+    border: none;
+    color: #ffffff; }
+  .hero .btn {
+    border-radius: 50px;
+    padding-right: 20px;
+    background-color: rgba(3, 68, 102, 0.17);
+    border: none;
+    text-transform: uppercase;
+    font-family: "Lato-Black";
+    font-weight: bold; }
+  .hero .form-control:focus {
+    color: #fff;
+    background-color: rgba(3, 68, 102, 0.17);
+    border: 0;
+    outline: 0;
+    box-shadow: none; }
+  .hero ::placeholder {
     color: #fff; }
 
-.topmenu {
-  border-top: 1px solid #DBDBDB; }
-  .topmenu .topmenu-nav .nav-link {
-    font-size: 16px;
-    font-weight: 300;
-    color: #777;
-    font-family: "Raleway";
-    padding: 15px; }
-  .topmenu .btn-primary {
-    font-size: 14px !important;
+footer {
+  background: #0D3250;
+  color: #ddd;
+  font-family: 'Trebuchet MS'; }
+  footer .link-item p {
+    font-size: 12px; }
+  footer .link-item a {
+    font-size: 12px;
+    color: #ddd; }
+  footer .link-item a:hover {
+    color: #007b5e; }
+
+.content-wrapper {
+  /* shop preview end */ }
+  .content-wrapper section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Poppins"; }
+  .content-wrapper .shop-preview .shop-content-preview .lead {
+    font-size: 30px;
+    color: #051c3d;
+    font-weight: 600; }
+  .content-wrapper .shop-preview .shop-content-preview .btn-primary {
+    font-size: 14px;
+    font-family: "Poppins";
     font-weight: bold;
     text-transform: uppercase;
     background: transparent;
@@ -10965,88 +11038,13 @@ body, html {
     border-bottom-right-radius: 50px;
     letter-spacing: 1.12px;
     color: #333;
-    padding: 8px 20px !important; }
-
-.hero {
-  background-color: #0D3250;
-  background-image: url(../images/farepay2.png);
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  color: #fff; }
-  .hero h1 {
-    font-size: 56px;
-    font-family: "Poppins";
-    font-weight: bold; }
-  .hero h2 {
-    font-size: 28px;
-    font-family: "GalanoGrotesqueAltLight";
-    line-height: 40px;
-    font-weight: bold; }
-  .hero .form-control {
-    height: 53px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    padding-left: 30px;
-    background-color: #eafbff;
-    border: 0; }
-  .hero .btn {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding-right: 20px;
-    background: #007b5e;
-    border-color: #007b5e; }
-  .hero .form-control:focus {
-    color: #495057;
-    background-color: #eafbff;
-    border: 0;
-    outline: 0;
-    box-shadow: none; }
-
-footer {
-  background: #0D3250;
-  color: #ddd;
-  font-family: 'Trebuchet MS'; }
-  footer .copyrights a {
-    font-size: 12px;
-    color: #ddd; }
-  footer .copyrights p {
-    font-size: 12px; }
-  footer .copyrights a:hover {
-    color: #007b5e; }
-
-.content-wrapper {
-  /* shop preview end */ }
-  .content-wrapper section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: "Poppins"; }
-  .content-wrapper .shop-preview {
-    padding-top: 100px; }
-    .content-wrapper .shop-preview .shop-content-preview .lead {
-      font-size: 30px;
-      color: #051c3d;
-      font-weight: 600; }
-    .content-wrapper .shop-preview .shop-content-preview .btn-primary {
-      font-size: 14px;
-      font-family: "Poppins";
-      font-weight: bold;
-      text-transform: uppercase;
-      background: transparent;
-      border: 2px solid #02b3e4;
-      border-top-left-radius: 50px;
-      border-bottom-left-radius: 50px;
-      border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-      letter-spacing: 1.12px;
-      color: #333;
-      padding: 12px 25px; }
-    @media (max-width: 767.98px) {
-      .content-wrapper .shop-preview .shop-content-preview .lead, .content-wrapper .shop-preview .shop-content-preview p {
-        text-align: center; } }
-    @media (max-width: 767.98px) {
-      .content-wrapper .shop-preview .shop-content-preview p {
-        text-align: center !important; } }
+    padding: 12px 25px; }
+  @media (max-width: 767.98px) {
+    .content-wrapper .shop-preview .shop-content-preview .lead, .content-wrapper .shop-preview .shop-content-preview p {
+      text-align: center; } }
+  @media (max-width: 767.98px) {
+    .content-wrapper .shop-preview .shop-content-preview p {
+      text-align: center !important; } }
   .content-wrapper .work-preview {
     padding-top: 0px; }
     .content-wrapper .work-preview .title {
@@ -11136,11 +11134,16 @@ footer {
   font-family: "Montserrat"; }
   .active-orders .card {
     border: none; }
-  .active-orders .card-title {
+  .active-orders .card-body .card-title {
     font-weight: bold;
     font-family: "Montserrat-Bold";
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: -0.04em;
     line-height: 22px; }
+  .active-orders .card-body span {
+    font-size: 11px;
+    font-weight: bold; }
+    .active-orders .card-body span .fa-clock {
+      color: #fd5001; }
 
 /*# sourceMappingURL=main.css.map */

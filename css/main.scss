@@ -119,6 +119,10 @@
     src: url("./fonts/Lato-Bold.ttf") format("truetype");
     font-weight: 700;
 }
+@font-face {
+    font-family: "Lato-Black";
+    src: url("./fonts/Lato-Black.ttf") format("truetype");
+}
 
 @font-face {
     font-family: "MavenPro";
@@ -302,63 +306,70 @@ body, html {
     width: 100%;
 }
 
-.topheader {
-  background: #F0F0F0;
-  width: 100%;
-  height: 50px;
-  font-size: 15px;
+header {
 
-  .fab {color: #ADADAD;margin-top: 5px;font-size: 25px;}
+    .header{
 
-  .nav-link {
-    color: #909090;
-    font-weight: 400;
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-  }
+        .topNav {
 
-  .btn-primary {
-    color: #fff;
-  }
-}
+            .nav-link {
+                padding-top: 0;
+                padding-bottom: 0;
+                font-size: 12px;
+                color: #007b5e;
+            }
 
-.topmenu {
-  border-top: 1px solid #DBDBDB;
+            .fab {font-size: 20px;}
+        }
 
-  .topmenu-nav {
+        .navMenu {
 
-    .nav-link {font-size: 16px;font-weight: 300;color: #777;font-family: "Raleway";padding: 15px;}
-  }
-  .btn-primary {
-    font-size: 14px !important;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #02b3e4;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    letter-spacing: 1.12px;
-    color: #333;
-    padding: 8px 20px !important;
-  }
+            .nav-link {
+                color: #005a82;
+                font-size: 12px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 0;
+                line-height: 80px;
+                font-family: "Lato-Black";
+            }
+        .nav-item {padding: 0 35px;}
+
+        .active {border-bottom: 2px solid #fd5001;}
+
+        a:hover {color: #ffc107;border-bottom: 2px solid #ffc107;}
+
+        
+
+        .btn-primary {
+            color: #fff;
+            padding: 0 40px;
+            line-height: 50px;
+            font-size: 10px;
+            display: inline-block;
+            border-radius: 25px;
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        }
+    }
 }
 
 .hero {
-    background-color: #0D3250;
-    background-image: url(../images/farepay2.png);
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+    text-align: center;
+    padding-top: 66px;
+    background: url(../images/homepage.svg) top center/cover no-repeat #fff;
     color: #fff;
-
+    padding-bottom: 280px;
+    
+    
     h1 {
-        font-size: 56px;
-        font-family: "Poppins";
-        font-weight: bold;
+        font-size: 60px;
+        font-family: "GalanoGrotesqueAltExtraBold";
+        font-weight: bolder;
     }
 
     h2{
@@ -369,28 +380,35 @@ body, html {
     }
 
     .form-control {
-        height: 53px;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        padding-left:30px;
-        background-color: #eafbff;
-        border: 0;
+        background-color: rgba(3,68,102,.17);
+        padding: 5px 20px 5px 5px;
+        height: 43px;
+        border-radius: 50px;
+        padding-left: 40px;
+        border: none;
+        color: #ffffff;
         
     }
     .btn {
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
+        border-radius: 50px;
         padding-right:20px;
-        background:#007b5e;
-        border-color:#007b5e;
+        background-color: rgba(3,68,102,.17);
+        border: none;
+        text-transform: uppercase;
+        font-family: "Lato-Black";
+        font-weight: bold;
     }
     .form-control:focus {
-        color: #495057;
-        background-color: #eafbff;
+        color: #fff;
+        background-color: rgba(3,68,102,.17);
         border: 0;
         outline: 0;
         box-shadow: none;
     }
+
+    ::placeholder { 
+        color: #fff;
+      }
 
 }
 
@@ -400,10 +418,10 @@ footer {
     color: #ddd;
     font-family: 'Trebuchet MS';
 
-    .copyrights {
+    .link-item {
 
-        a {font-size: 12px;color: #ddd}
         p {font-size: 12px;}
+        a {font-size: 12px;color: #ddd}
         a:hover {color: #007b5e;}
     }
 }
@@ -419,7 +437,6 @@ footer {
     }
 
     .shop-preview {
-        padding-top: 100px;
 
         .shop-content-preview {
             .lead {font-size: 30px;color: #051c3d;font-weight: 600;}
@@ -549,5 +566,13 @@ footer {
         border: none;
     }
 
-    .card-title {font-weight: bold;font-family: "Montserrat-Bold";font-size: 16px;letter-spacing: -0.04em;line-height: 22px;}
+    .card-body {
+        .card-title {font-weight: bold;font-family: "Montserrat-Bold";font-size: 14px;letter-spacing: -0.04em;line-height: 22px;}
+        span {
+        font-size: 11px;
+        font-weight: bold;
+
+        .fa-clock {color: #fd5001;}
+        }
+    }
 }
