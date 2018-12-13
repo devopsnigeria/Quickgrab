@@ -64,10 +64,10 @@
                                   
                             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                                 <ul class="navbar-nav navMenu">
-                                    <li class="nav-item active"><a class="nav-link" href="#">Grabcard</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal" data-target="#cardModal">Grabcard</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Earn Travelling</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
                                     <li class="nav-item p-0 mt-3"><a href=""><button class="btn btn-lg btn-primary">Create Order</button></a></li>
                                 </ul>
                             </div>
@@ -78,7 +78,7 @@
         </div>
     </header>
 
-    <div class="modal fade text-center py-5"  id="couponModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade text-center py-5"  id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -204,13 +204,13 @@
         </div>
     </div>
 
-    <div class="hero">
-        <div class="homepage">
+    <div class="_ngcontentHero text-center">
+        <div class="_ngcontentHomepage">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 mx-auto">
-                        <form>
-                            <div class="input-group mb-5 w-100 searchBox">
+                        <form class="_ngcontentSearchBox">
+                            <div class="input-group mb-5 w-100">
                                 <input type="search" class="form-control" placeholder="Paste the URL to the product you want to get..." aria-label="Search" aria-describedby="button-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
@@ -228,14 +228,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3 mx-auto">
-                                    <button class="btn btn-lg btn-block shadow">Get Started</button>
+                                <div class="col-md-2 mx-auto">
+                                    <button class="btn btn-lg btn-block btn-secondary shadow" data-toggle="modal" data-target="#registerModal">Get Started</button>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-2 mx-auto">
-                                    <div style="height: 40px; width: 2px; border: 1px dotted #fff;"></div>
-                                    <img src="./images/mouse.svg">
+                                    
                                 </div>
                             </div>
                 </div>

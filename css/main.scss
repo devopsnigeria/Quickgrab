@@ -358,17 +358,17 @@ header {
     }
 }
 
-.hero {
-    text-align: center;
-    padding-top: 66px;
+._ngcontentHero {
     background: url(../images/homepage.svg) top center/cover no-repeat #fff;
     color: #fff;
+    font-family: "Poppins";
+    padding-top: 66px;
     padding-bottom: 280px;
     
     
     h1 {
         font-size: 60px;
-        font-family: "GalanoGrotesqueAltExtraBold";
+        font-family: "Rubik-Bold";
         font-weight: bolder;
     }
 
@@ -408,7 +408,19 @@ header {
 
     ::placeholder { 
         color: #fff;
-      }
+    }
+
+    .btn-secondary {
+        color: #fff;
+        padding: 0 40px;
+        line-height: 50px;
+        font-size: 10px;
+        border-radius: 25px;
+        border: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: #fd5001;
+    }
 
 }
 
@@ -576,3 +588,6 @@ footer {
         }
     }
 }
+
+
+
