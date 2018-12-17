@@ -303,291 +303,210 @@ $display4-size:               1.3rem;
 
 body, html {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
 }
 
-header {
+header{
 
-    .header{
+    .header-wrapper {
 
-        .topNav {
+        .topNav {.nav-link {padding-top: 0;padding-bottom: 0;font-size: 12px;color: #007b5e;}}
 
-            .nav-link {
-                padding-top: 0;
-                padding-bottom: 0;
-                font-size: 12px;
-                color: #007b5e;
+        .navigation {
+
+            .navMenu {
+
+                .nav-item {padding: 0 35px;}
+                .nav-link {
+                    color: #005a82;
+                    font-size: 12px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 0;
+                    line-height: 80px;
+                    font-family: "Lato-Black";
+                }
+                a:hover {color: #fd5001;border-bottom: 2px solid #fd5001;}
+                .active {border-bottom: 2px solid #fd5001;}
+                .btn-primary {
+                    color: #fff;
+                    padding: 0 40px;
+                    line-height: 50px;
+                    font-size: 10px;
+                    display: inline-block;
+                    border-radius: 25px;
+                    border: none;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    background: #00a9d1;
+                }
             }
-
-            .fab {font-size: 20px;}
         }
 
-        .navMenu {
+    }
+}
 
-            .nav-link {
-                color: #005a82;
-                font-size: 12px;
-                font-weight: 700;
-                text-align: center;
-                text-transform: uppercase;
-                padding: 0;
-                line-height: 80px;
-                font-family: "Lato-Black";
+.app-home {
+
+    .main {
+        background: url(../images/homepage.svg) top center/cover no-repeat #fff;
+        color: #fff;
+        font-family: "Poppins";
+        padding-top: 66px;
+        padding-bottom: 280px;
+
+        .main-wrapper {
+
+            .search-box {
+
+                .form-control {
+                    background-color: rgba(3,68,102,.17);
+                    padding: 5px 20px 5px 5px;
+                    height: 43px;
+                    border-radius: 50px;
+                    padding-left: 40px;
+                    border: none;
+                    color: #ffffff;
+                }
+                .btn {
+                    border-radius: 50px;
+                    padding-right:20px;
+                    padding-left:20px;
+                    background-color: rgba(3,68,102,.17);
+                    border: none;
+                    text-transform: uppercase;
+                    font-family: "Lato-Black";
+                    font-weight: bold;
+                }
+                .form-control:focus {
+                    color: #fff;
+                    background-color: rgba(3,68,102,.17);
+                    border: 0;
+                    outline: 0;
+                    box-shadow: none;
+                }
+            
+                ::placeholder {color: #fff;}
+                .input-group-append {margin-left: -8rem;}
             }
-        .nav-item {padding: 0 35px;}
 
-        .active {border-bottom: 2px solid #fd5001;}
+            .main-content {
 
-        a:hover {color: #ffc107;border-bottom: 2px solid #ffc107;}
+                h1 {
+                    font-size: 55px;
+                    font-family: "Rubik-Bold";
+                    font-weight: bolder;
+                }
+            
+                p {
+                    font-size: 18px;
+                    font-family: "Poppins";
+                }
+            }
+            ._ngbtn{
+                .btn {
+                    color: #005a82;
+                    padding: 0 40px;
+                    line-height: 50px;
+                    font-size: 12px;
+                    border-radius: 25px;
+                    border: none;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
 
-        
+section {
+    ._ngsection {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    ._ngtest {
 
-        .btn-primary {
-            color: #fff;
-            padding: 0 40px;
-            line-height: 50px;
-            font-size: 10px;
-            display: inline-block;
-            border-radius: 25px;
+
+    }
+
+    ._ngorders {
+        font-family: "Montserrat";
+    
+        .card {
             border: none;
-            font-weight: 600;
-            text-transform: uppercase;
         }
-
+    
+        .card-body {
+            .card-title {font-weight: bold;font-family: "Montserrat-Bold";font-size: 14px;letter-spacing: -0.04em;line-height: 22px;}
+            span {
+            font-size: 11px;
+            font-weight: 600;
+    
+            .fa-clock {color: #fd5001;}
+            }
         }
     }
 }
 
-._ngcontentHero {
-    background: url(../images/homepage.svg) top center/cover no-repeat #fff;
+footer {
+    background-color: #09223b;
     color: #fff;
-    font-family: "Poppins";
-    padding-top: 66px;
-    padding-bottom: 280px;
-    
-    
-    h1 {
-        font-size: 60px;
-        font-family: "Rubik-Bold";
-        font-weight: bolder;
+    font-family: "Montserrat";
+
+    .footer {
+        .border-bottom {border-bottom: 1px solid #0f3a64 !important;}
+        .btn {font-weight: 600;padding: 0 35px;border-radius: 50px;line-height: 35px;text-transform: uppercase;}
     }
 
-    h2{
-        font-size: 28px;
-        font-family: "GalanoGrotesqueAltLight";
-        line-height: 40px;
-        font-weight: bold;
+    ._ngfootnav {
+        h6 {color: #8FA1B2;text-transform: uppercase;font-size: 10px;font-weight: 700;letter-spacing: 2px;}
+        .nav-link {color: #fff; padding-left: 0;font-size: 10px;}
+        a:hover {color: #007b5e;text-decoration: underline;}
+    }
+}
+
+._ngabout {
+    color: #fff;
+    background-color: rgba(0,0,0,.75);
+
+    ._ngcontentMission {
+        background: url(../images/fruit_stall.jpg);
+    }
+    ._ngcontentVision {
+        background: url(../images/pdx3_mini.jpg)no-repeat;
+        background-size: cover;
     }
 
-    .form-control {
-        background-color: rgba(3,68,102,.17);
-        padding: 5px 20px 5px 5px;
-        height: 43px;
-        border-radius: 50px;
-        padding-left: 40px;
-        border: none;
+    h2 {
         color: #ffffff;
-        
+        text-align: left;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-style: normal;
     }
+    p {color: #9ea3a8;font-size: 12px;}
+
     .btn {
-        border-radius: 50px;
-        padding-right:20px;
-        background-color: rgba(3,68,102,.17);
-        border: none;
-        text-transform: uppercase;
-        font-family: "Lato-Black";
-        font-weight: bold;
-    }
-    .form-control:focus {
-        color: #fff;
-        background-color: rgba(3,68,102,.17);
-        border: 0;
-        outline: 0;
-        box-shadow: none;
-    }
-
-    ::placeholder { 
-        color: #fff;
-    }
-
-    .btn-secondary {
         color: #fff;
         padding: 0 40px;
         line-height: 50px;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 25px;
         border: none;
         font-weight: 600;
+        background: transparent;
+        border: 2px solid #ddd;
         text-transform: uppercase;
-        background: #fd5001;
-    }
-
-}
-
-
-footer {
-    background: #0D3250;
-    color: #ddd;
-    font-family: 'Trebuchet MS';
-
-    .link-item {
-
-        p {font-size: 12px;}
-        a {font-size: 12px;color: #ddd}
-        a:hover {color: #007b5e;}
     }
 }
 
-
-
-.content-wrapper {
-
-    section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        font-family: "Poppins";
-    }
-
-    .shop-preview {
-
-        .shop-content-preview {
-            .lead {font-size: 30px;color: #051c3d;font-weight: 600;}
-            .btn-primary {
-                font-size: 14px;
-                font-family: "Poppins";
-                font-weight: bold;
-                text-transform: uppercase;
-                background: transparent;
-                border: 2px solid #02b3e4;
-                border-top-left-radius: 50px;
-                border-bottom-left-radius: 50px;
-                border-top-right-radius: 50px;
-                border-bottom-right-radius: 50px;
-                letter-spacing: 1.12px;
-                color: #333;
-                padding: 12px 25px;
-            }
-
-            @include media-breakpoint-down(sm) {
-                .lead,p {
-                  text-align: center;
-                }
-            }
-            @include media-breakpoint-down(sm) {
-                p {
-                  text-align: center !important;
-                }
-            }
-        }
-    } /* shop preview end */
-
-    .work-preview {
-        padding-top: 0px;
-        .title {font-size: 36px;font-family: "Lato";font-weight: lighter;border-bottom: 1px solid #E0E0E0;}
-    }
-
-    .travel-content-preview {
-        .lead {font-size: 30px;color: #051c3d;font-weight: 600;}
-        .btn-primary {
-            font-size: 14px;
-            font-family: "Poppins";
-            font-weight: bold;
-            text-transform: uppercase;
-            background: transparent;
-            border: 2px solid #02b3e4;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
-            letter-spacing: 1.12px;
-            color: #333;
-            padding: 12px 25px;
-          }
-    }
-
-    .toggle-content-wrapper {
-
-        .toggle-tab-wrapper {
-            background: #F0F0F0;
-  
-          .navbar-toggle-tabs .nav-link {
-            display: block;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 40px 0;
-            color: #506077;
-            border-radius: 0;
-            border: 0;
-            font-size: 11px;
-          }
-        .navbar-toggle-tabs .nav-link.active {
-            background: #fff;
-            color: #17d3b9;
-            border-top: 2px solid #17d3b9;
-            border-color: #fff;
-            border-top-color: #17d3b9;
-          }
-        }
-  
-        .tab-content {
-          padding: 120px 0;
-        }
-  
-        h2 {font-size: 26px;color: #051c3d;}
-  
-        img {width: 100%;height: auto;}
-    }
-
-} /* general content wrapper end */
-
-.testimonial {
-    background: #dddddd;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-family: "Lato" !important;
-    color: #000000;
-
-    .testimonial-title {
-      font-size: 40px;
-      border-bottom: 1px solid #E0E0E0;
-    }
-
-    .testimonial-lead {font-size: 18px;}
-
-    .carousel-inner {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      min-height: 300px;
-
-      .comment {font-size: 12px;font-family: "Poppins";color: #000000;}
-      .lead {font-size: 20px;font-family: "Lato";font-weight: 900;}
-      p {font-family: "Poppins";font-weight: 700;color: #5faf00;}
-    }
-
-    .carousel-indicators li {background: #dddddd;}
-    .carousel-indicators .active {background:  #5faf00;}
-
-    
+.modal-dialog {
+    max-width: 430px;
 }
-
-.active-orders {
-    font-family: "Montserrat";
-
-    .card {
-        border: none;
-    }
-
-    .card-body {
-        .card-title {font-weight: bold;font-family: "Montserrat-Bold";font-size: 14px;letter-spacing: -0.04em;line-height: 22px;}
-        span {
-        font-size: 11px;
-        font-weight: bold;
-
-        .fa-clock {color: #fd5001;}
-        }
-    }
+.modal-content {
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0;
 }
-
-
-

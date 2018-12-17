@@ -38,234 +38,280 @@
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
     <script type="text/javascript" src="./node_modules/popper.js/dist/popper.min.js"></script>
 
-    <script type="text/javascript" src="./js/e.js"></script>
-
 </head>
-<body class="body-wrapper">
-    <div class="head-banner fixed-top">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 mx-auto">
-                    <div class="inn">
-                        <div class="inner">
-                            <img src="./images/plb-lockup-sm@2x.png" width="80" class="banner-img">
+<body style="font-size: 16px;">
+    
+    <header>
+        <div class="_ngheader">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav justify-content-end _ngtopNav">
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-comments"></i>&nbsp;Chat with Support</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-phone-volume"></i>&nbsp;+2348115128285</a></li>
+                            <a class="nav-link p-0" href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <a class="nav-link" href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 pt-4">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <a class="navbar-brand p-0 pb-3" href="index.html"><img src="./images/logo.png"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                  
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                <ul class="navbar-nav navMenu">
+                                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#cardModal">Grabcard</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="#">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Earn Travelling</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                    <li class="nav-item p-0 mt-3"><a href=""><button class="btn btn-lg btn-primary">Create Order</button></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade text-center py-5"  id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="top-strip"></div>
+                    <h3 class="pt-4 mb-3 text-secondary">Get The GrabCard</h3>
+                    <p class="pb-1 text-muted"><small>Get our <span style="text-transform: uppercase;">Coupon Code</span> using your registered email.</small></p>
+                    <form>
+                        <div class="input-group mb-3 w-75 mx-auto">
+                          <input type="search" class="form-control" placeholder="coupon@quickgrab.io" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                          <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-paper-plane"></i></button>
+                          </div>
+                        </div>
+                    </form>
+                    <p class="pb-1 text-danger"><small>Only registered and active user can earn</small></p>
+                    <div class="bottom-strip"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---- Registration form modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h1 class="modal-title w-100 mt-5">Create Account</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-5 my-3 p-0">
+                <form action="register.php" method="POST">
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-user"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-user"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-mobile"></i></div>
+                            </div>
+                            <input class="form-control" id="phone" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-email"></i></div>
+                            </div>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-0">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-lock"></i></div>
+                            </div>
+                            <input type="password" class="form-control" id="pass" placeholder="Password" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn w-50">Sign Up</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!---- Login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h1 class="modal-title w-100 mt-5">Account Login</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-5 my-5 p-0">
+                <form>
+                    <div class="form-group row m-0 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-email"></i></div>
+                            </div>
+                            <input type="email" class="form-control" id="emailx" placeholder="Email: quickgrab@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group row m-0">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="ti ti-lock ti-2x"></i></div>
+                            </div>
+                            <input type="password" class="form-control" id="passx" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <a href="">Forget password ?</a>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn w-50">Access</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="_ngcontentLanding">
+        <div class="_ngcontentHomepage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <h2 class="text-center mb-5">about us</h2>
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/Nigeria.png" width="228" height="300">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3 class="pt-4">Africa's No1 peer-to-peer community marketplace</h3>
+                                        <div style="width: 50px; height: 5px; background: #ff6600;border-radius: 60px;" class="mb-4"></div>
+                                        <p>We are a team of dedicated to breaking the barriers of online experience. we felt the need to 
+                                            bringing the community of marketplace together
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header header-nav fixed-top">
-        <div class="container">
-            <nav class = "navbar navbar-expand-lg px-0 py-4">
-                <a class = "navbar-brand" href = "index.html"><img src="./images/logo.png" alt="QuickGrab" class="navbar-logo"></a>
-                <button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" 
-                    data-target = "#navbarNavDropdown" aria-controls = "navbarNavDropdown" 
-                    aria-expanded = "false" aria-label = "Toggle navigation">
-                       
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x" style="color: #fff;"></i></span>
-                </button>
-                <div class = "collapse navbar-collapse justify-content-end" id = "navbarNavDropdown">
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item"><a class = "nav-link active" href = "#" data-toggle="modal" data-target="#couponModal">GrabCard</a></li>
-                        <li class = "nav-item"><a class = "nav-link text-center-sm" href = "marketplace.html">marketplace</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href = "earn.html">Earn Travelling</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#registerModal">Register</a></li>
-                        <li class = "nav-item"><a class = "nav-link" href = "#" data-toggle="modal" data-target="#loginModal">Sign In</a></li>
-                        <li class = "nav-item p-0"><a class = "nav-link btn" href = "#">Create Order</a></li>
-                    </ul>  
-                </div>
-            </nav>
-        </div>
-    </div>
 
-    <div class="main_land">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="main-wrap">
-                        <span>Who We Are</span>
-                        <h1>
-                            <p>We are an innovation centre dedicated to accelerating the application of peer-to-peer community marketplace connecting shoppers and travelers all around the world</p>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="stores">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <div class="store-title">
-                        <h2>Most Popular stores</h2>
-                        <p class="display-3 justify-content">Go to any website, find your product and paste the URL of the product you want to request delivery</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="./images/644b4dda98a23e67.jpg" alt="Amazon">
-                        <div class="card-body">
-                          <!---- <a href="https://www.amazon.com"><img src="./images/1ee849ec670108f5.svg" class="w-50"></a> --->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/4c6858b2ecfc1f08.jpg" alt="Ebay">
-                        <div class="card-body">
-                          <!---- <a href="hhtps://www.ebay.com"><img src="./images/c4f7b7dd4ae603a3.svg" class="w-50"></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/5c16ea0cdc891f87.jpg" alt="Walmart">
-                        <div class="card-body">
-                          <!--- <a href="#"><img src="./images/f0eb07a521bc8a84.svg" class="w-50"></a> ---->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/8ae484ad55ef7125.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <!----- <a href="#"><img src="./images/79af4f2907a20628.svg" class="w-50"></a> ---->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/644b4dda98a23e67.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <!------ <a href="#"><img src="./images/1ee849ec670108f5.svg" class="w-50"></a> ----->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/4c6858b2ecfc1f08.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <!----- <a href="#"><img src="./images/c4f7b7dd4ae603a3.svg" class="w-50"></a> ---->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/5c16ea0cdc891f87.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <!------ <a href="#"><img src="./images/f0eb07a521bc8a84.svg" class="w-50"></a> ----->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="./images/8ae484ad55ef7125.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <!----- <a href="#"><img src="./images/79af4f2907a20628.svg"></a> ---->
+    <section>
+        <div class="_ngcontentOffer">
+            <div class="_ngofferWrapper">
+                <div class="_ngcontentInner">
+                    <div class="container text-center">
+                        <h1>WHAT WE DO</h1>
+                        <div style="width: 50px; height: 5px; background: #ff6600;border-radius: 60px;" class="mb-4 mx-auto"></div>
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <p>At Quickgrab, we do our best to break the limit between shoppers and online marketplace. we find out the urge for global Products by shoppers all around the world, but we see a barrier of limit to these item due to custom and tax fees, high delivery rate etc. so we build a system of help</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <h2 class="text-center mt-5">Meet the team</h2>
-                    <h1 class="text-center mb-5">We The Founders</h1>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <article class="material-card Red">
-                                <h2>
-                                    <span>Joseph Israel</span>
-                                    <strong><i class="fa fa-fw fa-star"></i>Programmer</strong>
-                                </h2>
-                                <div class="mc-content">
-                                    <div class="img-container">
-                                        <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-                                    </div>
-                                    <div class="mc-description">
-                                        A Frontend Developer
-                                    </div>
-                                </div>
-                                <a class="mc-btn-action">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                                <div class="mc-footer">
-                                    <h4>
-                                        Social
-                                    </h4>
-                                    <a><i class="fab fa-facebook-square"></i></a>
-                                    <a><i class="fab fa-twitter-square"></i></a>
-                                    <a><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </article>
+        <div class="_ngcontentCommunity">
+            <div class="_ngcommuntiyInner">
+                <div class="_ngcommunity">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Out of over 10,000 budding entrepreneurs, Startup Desk was selected as one of the top 10 winners of the British Council's 2016 Creative Enterprise Challenge.</h2>
+                            </div>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <article class="material-card Red">
-                                <h2>
-                                    <span>Uche</span>
-                                    <strong><i class="fa fa-fw fa-star"></i>Engineer</strong>
-                                </h2>
-                                <div class="mc-content">
-                                    <div class="img-container">
-                                        <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-                                    </div>
-                                    <div class="mc-description">
-                                        Artificial Intelligence
-                                    </div>
-                                </div>
-                                <a class="mc-btn-action">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                                <div class="mc-footer">
-                                    <h4>
-                                        Social
-                                    </h4>
-                                    <a><i class="fab fa-facebook-square"></i></a>
-                                    <a><i class="fab fa-twitter-square"></i></a>
-                                    <a><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <article class="material-card Red">
-                                <h2>
-                                    <span>Taleem</span>
-                                    <strong><i class="fa fa-fw fa-star"></i>Programmer</strong>
-                                </h2>
-                                <div class="mc-content">
-                                    <div class="img-container">
-                                        <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-                                    </div>
-                                    <div class="mc-description">A Fullstack Developer</div>
-                                </div>
-                                <a class="mc-btn-action">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                                <div class="mc-footer">
-                                    <h4>Social</h4>
-                                    <a><i class="fab fa-facebook-square"></i></a>
-                                    <a><i class="fab fa-twitter-square"></i></a>
-                                    <a><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </article>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="_ngcontentAbout no-gutters">
+            <div class="row no-gutters">
+                <div class="col-md-6 _ngcontentMission">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 mx-auto">
+                                <h2 class="pt-5 mt-5 mb-3">Our Mission</h2>
+                                <p class="pb-5 mb-5">To build the largest online helping trusted peer-to-peer community marketplace connecting shoppers and travelers all around the world</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _ngcontentVision">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-11 mx-auto">
+                                <h2 class="pt-5 mt-5 mb-3">Our vission</h2>
+                                <p class="pb-5 mb-5">We help Travellers earn while they travel and help shoppers save while they shop any stores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+
+    <footer class="footer" style="border-top: 1px solid #fff;">
+        <div class="container container-wrapper">
+            <div class="row wrapper-inner">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row footer-content">
+                        <div class="col-md-4">
+                            <div class="footer-brand mt-5">
+                                <a href="https://quickgrab.io"><img src="./images/flaticon-logo-footer.svg" width="150"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="link-item text-right mt-4">
+                                <a href="">Disclaimer Policy |</a>
+                                <a href="">Terms & conditions</a>
+                                <p class="m-0">Copyright © 2017 quickgrab. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
 </body>
 </html>
